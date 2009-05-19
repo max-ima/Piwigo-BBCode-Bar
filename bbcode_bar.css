@@ -1,0 +1,27 @@
+.outils {   
+  margin-left: 0pt;
+  margin-right: auto;
+}
+
+.bbcbutton {
+  background: buttonface;
+  border: 1px solid buttonface;
+  margin: 1;
+}
+
+.over {
+  background: buttonface;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  margin: 1;
+}
+
+.genmed {
+	color:#000000;
+}
+
+.helpline{
+	border:0pt solid;	
+}

@@ -1,0 +1,38 @@
+Plugin Name: BBCode_bar
+Version: 1.0
+Description: Allow use BBCode for comments and descriptions. / Permet d'utiliser du BBCode pour les commentaires et les descriptions.
+Plugin URI: http://phpwebgallery.net/ext/extension_view.php?eid=140
+Author: Atadilo
+
+*****************************************
+* Historique
+*****************************************
+1.0
+- Compatible avec la version 1.7.1 de PWG
+- Ne supporte plus la description des éléments et des catégories
+- Plus de prévisualisation
+
+0.9
+- Répertoire des icons paramétrable.
+- Ajout de la BBCode bar identique dans les 3 cas ({lang:comment} n'est plus le point de repère à l'ajout dans picture.tpl)
+- JavaScript Modifier pour essayer d'être compatible IE
+- Compatibilité avec SmiliesSupport
+
+0.8.2
+- Correction Bug : lors de la sélection d'une taille, c'est bien un chiffre qui est ajouté et non plus le "mot" sélectionné.
+- Correction Bug : La feuille de style (bbcode_bar.css) est correctement ajouté dans l'entête des fichiers généré.
+
+0.8.1
+- Correction Bug : lors de la sélection d'une taille, c'est bien [size] qui est ajouté.
+- Correction Bug : Après la sélection d'une couleur, la liste de choix se repositionne sur sa valeur par défaut.
+
+0.8
+- Une fonction de "preview" pour les commentaires
+- Boite d'aide qui explique ce que fait le bouton sélectionné
+- L'ajout de la BBCode_bar pour la saisie des description des catégorie ( sous condidition de modification de fichiers PHP)
+- L'ajout du renderer : render_cat_description ( sous condidition de modification de fichiers PHP)
+- L'ajout de la BBCode_bar pour la saisie des description des élements ( sous condidition de modification de fichiers PHP)
+- L'ajout du renderer : render_element_description ( sous condidition de modification de fichiers PHP)
+- Utilisation du trigger 'loc_end_picture' à la place de 'render_element_content' (permet la compatibilité avec LookLiko gbo)
+- Include du fichier de langue déplacé
+- Dans les balise img, utilisation de 'title' à la place de 'alt'
