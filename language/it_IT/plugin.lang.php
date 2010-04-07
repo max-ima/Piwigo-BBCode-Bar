@@ -1,7 +1,7 @@
 <?php
 	global $lang;
 	
-	$lang['admin_liste'] 		= "Lista :";	
+	$lang['admin_liste'] 		= "Elenco :";	
 	
 	$lang['p_help'] 		= "Paragrafo : [p]paragrafo[/p]";	
 	$lang['b_help'] 		= "Grassetto : [b]grassetto[/b]";
@@ -11,8 +11,8 @@
 	
 	$lang['center_help'] 	= "Centrato : [center]centrato[/center]";
 	$lang['right_help'] 	= "Destra : [right]destra[/right]";
-	$lang['ul_help'] 		= "Lista : [ul][li]elemento[/li][/ul]";
-	$lang['ol_help'] 		= "Lista Numerica : [ol][li]elemento[/li][/ol]";
+	$lang['ul_help'] 		= "Elenco : [ul][li]elemento[/li][/ul]";
+	$lang['ol_help'] 		= "Elenco Numerica : [ol][li]elemento[/li][/ol]";
 	
 	$lang['quote_help'] 	= "Citazione : [quote]citazione[/quote]";
 	$lang['img_help'] 		= "Immagine : [img]immagine[/img]";
