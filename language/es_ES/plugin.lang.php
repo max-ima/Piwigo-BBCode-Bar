@@ -12,14 +12,14 @@
 	$lang['center_help'] 	= "Centrado : [center]centrado[/center]";
 	$lang['right_help'] 	= "Derecha : [right]derecha[/right]";
 	$lang['ul_help'] 		= "Lista : [ul][li]elemento[/li][/ul]";
-	$lang['ol_help'] 		= "Lista Numerado : [ol][li]elemento[/li][/ol]";
+	$lang['ol_help'] 		= "Lista Numerada : [ol][li]elemento[/li][/ol]";
 	
-	$lang['quote_help'] 	= "Ciudad : [quote]Citación[/quote]";
+	$lang['quote_help'] 	= "Citada : [quote]Citación[/quote]";
 	$lang['img_help'] 		= "Imagen : [img]Imagen[/img]";
 	$lang['url_help'] 		= "URL : [url=Page URL]Nombre de la página[/url]";
 	$lang['mail_help'] 		= "Email : [email]Email[/email]";	
 	
-	$lang['size_help'] 		= "Talla carácteres : [size=X]texto[/size]";
+	$lang['size_help'] 		= "Tamaño carácteres : [size=X]texto[/size]";
 	$lang['tiny'] 		= "Todo pequeño";
 	$lang['small'] 		= "Pequeño";
 	$lang['normal'] 	= "Normal";
@@ -31,7 +31,7 @@
 	$lang['maroon_help'] 	= "Rojo oscuro";		
 	$lang['red_help'] 		= "Rojo";			
 	$lang['orange_help'] 	= "Naranja";	 	
-	$lang['brown_help'] 	= "Castaña";
+	$lang['brown_help'] 	= "Castaño";
 	$lang['yellow_help'] 	= "amarillo";	 	
 	$lang['green_help'] 	= "Verde"; 	
 	$lang['olive_help'] 	= "Aceituna";	 	
@@ -43,9 +43,9 @@
 	$lang['white_help'] 	= "Blanco";
 	$lang['black_help'] 	= "Negro";
 	
-	$lang['preview'] 		= "prado imaginar";
+	$lang['preview'] 		= "Visualizar";
 	
-	$lang['help']			= "Astucia: una postura en forma puede ser aplicada sobre el texto seleccionado.";
+	$lang['help']			= "Astucia: un formato puede ser aplicada sobre el texto seleccionado.";
 	
 	$lang['repicon']		= "Repertorio del icons."
 	
