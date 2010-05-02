@@ -45,9 +45,9 @@
 	
 	$lang['preview'] 		= "Visualizar";
 	
-	$lang['help']			= "Astucia: un formato puede ser aplicada sobre el texto seleccionado.";
+	$lang['help']			= "Astucia: un formato puede ser aplicado sobre el texto seleccionado.";
 	
-	$lang['repicon']		= "Repertorio del icons."
+	$lang['repicon']		= "Repertorio de los iconos."
 	
 	$lang['bbcb_config_saved'] = "Configuración registrada";
 ?>
