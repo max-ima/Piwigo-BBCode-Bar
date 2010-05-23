@@ -1,10 +1,9 @@
 <?php /*
-Plugin Name: BBCode_bar
-Version: 2.0.a
-Description: Allow use BBCode for comments and descriptions. / Permet d'utiliser du BBCode pour les commentaires et les descriptions.
-Plugin URI: http://phpwebgallery.net/ext/extension_view.php?eid=140
-Author: Atadilo
-Author URI: http://www.phpwebgallery.net
+Plugin Name: BBCode Bar
+Version: auto
+Description: Allow use BBCode for comments and descriptions.
+Plugin URI: http://piwigo.org/ext/extension_view.php?eid=140
+Author: Atadilo & P@t
 */
 
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
@@ -27,7 +26,7 @@ if (script_basename() == 'admin')
   function bbcode_bar_admin_menu($menu)
   {
     array_push($menu,
-      array('NAME' => 'BBCode_Bar',
+      array('NAME' => 'BBCode Bar',
             'URL' => get_admin_plugin_menu_link(dirname(__FILE__) . '/bbcode_bar_admin.php')));
     return $menu;
   }

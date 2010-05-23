@@ -34,8 +34,8 @@ function set_bbcode_bar()
   {
     $template->assign('BBCode_bar_SmiliesSupport', array('SMILIESSUPPORT_PAGE' => SmiliesTable()));
   }
-  
-  $lang['comment'] .= $template->parse('bbcode_bar', true);
+
+  $lang['Comment'] .= $template->parse('bbcode_bar', true);
 }
 
 

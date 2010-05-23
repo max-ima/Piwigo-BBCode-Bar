@@ -1,0 +1,1 @@
+Allow use BBCode for comments and descriptions.
