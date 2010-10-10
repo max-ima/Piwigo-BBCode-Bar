@@ -1,0 +1,1 @@
+Erlaubt die Eingabe von BBCode in Kommentaren und Beschreibungen
