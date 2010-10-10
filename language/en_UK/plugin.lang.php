@@ -1,18 +1,18 @@
 <?php
 	global $lang;
 	
-		$lang['admin_liste'] 		= "Liste :";	
+		$lang['admin_liste'] 		= "List :";	
 	
 	$lang['p_help'] 		= "Paragraph : [p]Paragraph[/p]";	
-	$lang['b_help'] 		= "Bold : [b]pold[/b]";
+	$lang['b_help'] 		= "Bold : [b]bold[/b]";
 	$lang['i_help'] 		= "Italic : [i]italic[/i]";
 	$lang['u_help'] 		= "Underline : [u]underline[/u]";	
 	$lang['s_help'] 		= "Striped  : [s]striped [/s]";
 	
 	$lang['center_help'] 	= "Center : [center]center[/center]";
 	$lang['right_help'] 	= "Right : [right]right[/right]";
-	$lang['ul_help'] 		= "List : [ul][li]element[/li][/ul]";
-	$lang['ol_help'] 		= "List : [ol][li]element[/li][/ol]";
+	$lang['ul_help'] 		= "Unordered List : [ul][li]element[/li][/ul]";
+	$lang['ol_help'] 		= "Ordered List : [ol][li]element[/li][/ol]";
 	
 	$lang['quote_help'] 	= "Quote : [quote]quote[/quote]";
 	$lang['img_help'] 		= "Img : [img]img[/img]";
@@ -45,7 +45,7 @@
 	
 	$lang['preview'] 		= "Preview";
 	
-	$lang['help']			= "Easy way: A working can be applied to the selected text.";
+	$lang['help']			= "Easy way: A formatting can be applied to the selected text.";
 	
 	$lang['repicon']		= "Icons directory.";
   
