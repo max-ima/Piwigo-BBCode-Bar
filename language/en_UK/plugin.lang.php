@@ -1,8 +1,5 @@
 <?php
-	global $lang;
-	
-		$lang['admin_liste'] 		= "List :";	
-	
+		
 	$lang['p_help'] 		= "Paragraph : [p]Paragraph[/p]";	
 	$lang['b_help'] 		= "Bold : [b]bold[/b]";
 	$lang['i_help'] 		= "Italic : [i]italic[/i]";
@@ -20,13 +17,13 @@
 	$lang['mail_help'] 		= "E-mail : [email]Email[/email]";	
 	
 	$lang['size_help'] 		= "Font size : [size=X]text[/size]";
-	$lang['tiny'] 		= "Tiny";
-	$lang['small'] 		= "Small";
-	$lang['normal'] 	= "Normal";
-	$lang['large'] 		= "Large";
-	$lang['huge'] 		= "Huge";	
+	$lang['tiny'] 			= "Tiny";
+	$lang['small'] 			= "Small";
+	$lang['normal'] 		= "Normal";
+	$lang['large'] 			= "Large";
+	$lang['huge'] 			= "Huge";	
 	
-	$lang['fc_help'] 	= "Font color : [color=color]text[/color]";
+	$lang['fc_help'] 		= "Font color : [color=color]text[/color]";
 	$lang['default_help']	= "Default";
 	$lang['maroon_help'] 	= "Maroon";		
 	$lang['red_help'] 		= "Red";			
@@ -43,11 +40,8 @@
 	$lang['white_help'] 	= "White";
 	$lang['black_help'] 	= "Black";
 	
-	$lang['preview'] 		= "Preview";
-	
 	$lang['help']			= "Easy way: A formatting can be applied to the selected text.";
 	
 	$lang['repicon']		= "Icons directory.";
-  
-  $lang['bbcb_config_saved'] = "Configuration saved";
+
 ?>

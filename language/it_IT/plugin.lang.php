@@ -1,8 +1,5 @@
 <?php
-	global $lang;
-	
-	$lang['admin_liste'] 		= "Elenco :";	
-	
+
 	$lang['p_help'] 		= "Paragrafo : [p]paragrafo[/p]";	
 	$lang['b_help'] 		= "Grassetto : [b]grassetto[/b]";
 	$lang['i_help'] 		= "Corsivo : [i]Corsivo[/i]";
@@ -20,13 +17,13 @@
 	$lang['mail_help'] 		= "E-mail : [email]Email[/email]";	
 	
 	$lang['size_help'] 		= "Dimensione testo : [size=X]testo[/size]";
-	$lang['tiny'] 		= "Piccolissimo";
-	$lang['small'] 		= "Piccolo";
-	$lang['normal'] 	= "Normale";
-	$lang['large'] 		= "Grande";
-	$lang['huge'] 		= "Grandissimo";	
+	$lang['tiny'] 			= "Piccolissimo";
+	$lang['small'] 			= "Piccolo";
+	$lang['normal'] 		= "Normale";
+	$lang['large'] 			= "Grande";
+	$lang['huge'] 			= "Grandissimo";	
 	
-	$lang['fc_help'] 	= "Colore del testo  : [color=couleur]testo[/color]";
+	$lang['fc_help'] 		= "Colore del testo  : [color=couleur]testo[/color]";
 	$lang['default_help']	= "Default";
 	$lang['maroon_help'] 	= "Rosso scuro";		
 	$lang['red_help'] 		= "Rosso";			
@@ -43,11 +40,8 @@
 	$lang['white_help'] 	= "Bianco";
 	$lang['black_help'] 	= "Nero";
 	
-	$lang['preview'] 		= "Previsualisare";
-	
 	$lang['help']			= "Trucco : Un formattaggio può essere applicato ad un testo selezionato.";
 	
 	$lang['repicon']		= "Directory delle icone";
-  
-  $lang['bbcb_config_saved'] = "Configurazione registrata";
+
 ?>

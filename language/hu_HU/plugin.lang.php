@@ -1,7 +1,4 @@
 <?php
-	global $lang;
-	
-		$lang['admin_liste'] 		= "BB kód lista :";	
 	
 	$lang['p_help'] 		= "Új bekezdés : [p]bekezdés[/p]";	
 	$lang['b_help'] 		= "Félkövér : [b]félkövér szöveg[/b]";
@@ -20,13 +17,13 @@
 	$lang['mail_help'] 		= "E-mail : [email]e-mail cím[/email]";	
 	
 	$lang['size_help'] 		= "Betűméret : [size=X]betű mérete[/size]";
-	$lang['tiny'] 		= "Apró";
-	$lang['small'] 		= "Kicsi";
-	$lang['normal'] 	= "Normál";
-	$lang['large'] 		= "Közepes";
-	$lang['huge'] 		= "Nagy";	
+	$lang['tiny'] 			= "Apró";
+	$lang['small'] 			= "Kicsi";
+	$lang['normal'] 		= "Normál";
+	$lang['large'] 			= "Közepes";
+	$lang['huge'] 			= "Nagy";	
 	
-	$lang['fc_help'] 	= "Betűszín : [color=szín]betű színe[/color]";
+	$lang['fc_help'] 		= "Betűszín : [color=szín]betű színe[/color]";
 	$lang['default_help']	= "Alapértelmezett";
 	$lang['maroon_help'] 	= "Gesztenyebarna";		
 	$lang['red_help'] 		= "Piros";			
@@ -42,12 +39,9 @@
 	$lang['violet_help'] 	= "Ibolya";
 	$lang['white_help'] 	= "Fehér";
 	$lang['black_help'] 	= "Fekete";
-	
-	$lang['preview'] 		= "Megtekint";
-	
+		
 	$lang['help']			= "Automatikus használat: A kód a kijelölt szövegre alkalmazható.";
 	
 	$lang['repicon']		= "Ikon könyvtár.";
   
-  $lang['bbcb_config_saved'] = "Beállítások mentése sikeres";
 ?>

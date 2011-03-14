@@ -1,21 +1,15 @@
 var bbcode = new Array();
 var theSelection = false;
 
-function BBChr(form, field) { BBCwrite(form, field, '', "[hr]", true); }
-function BBCdir(form, field, dirc) { document.forms[form].elements[field].dir=(dirc); }
-function BBCft(form, field, box) { BBCfont(form, field, "font", box); }
 function BBCfs(form, field, box) { 
-	//BBCfont(form, field, "size", box); 
-	var val = 10 + 2 * (box.selectedIndex - 2 );
-	if ( val != 0 ) {
-		BBCwrite(form, field, "[size="+ val+"]", "[/size]", true); 
-	}
+	BBCwrite(form, field, "[size="+ box.value +"]", "[/size]", true); 
 	box.selectedIndex = 2;
 }
 function BBCfc(form, field, box) { 
 	BBCfont(form, field, "color", box); 
 	box.selectedIndex = 0;
 }
+
 function BBCfont(form, field, code, box) { 
 	BBCwrite(form, field, "["+code+"="+box.value+"]", "[/"+code+"]", true); 
 }
@@ -26,23 +20,6 @@ function BBCwmi(form, field, type) {
 	if (URL == null) { return; }
 	if (!URL) { return alert("Error : You didn't write the Address"); }
 	BBCwrite(form, field, '', "["+type+"]"+URL+"[/"+type+"]", true);
-}
-
-function BBCode(form, field, code, img) {
-	var type = img.name;
-	if (BBCwrite(form, field, "["+code+"="+type+"]", "[/"+code+"]")) { return; }
-	if (bbcode[code+type+form+field] == null) {
-		ToAdd = "["+code+"="+type+"]";
-		re = new RegExp(type+".(\\w+)$");
-		img.src = img.src.replace(re, type+"1.$1");
-		bbcode[code+type+form+field] = 1;
-	} else {
-		ToAdd = "[/"+code+"]";
-		re = new RegExp(type+"1.(\\w+)$");
-		img.src = img.src.replace(re, type+".$1");
-		bbcode[code+type+form+field] = null;
-	}
-	BBCwrite(form, field, '', ToAdd, true);
 }
 
 function BBCcode(form, field, img) {
@@ -77,19 +54,6 @@ function BBClist(form, field, img) {
 		bbcode[form+field+code] = null;
 	}
 	BBCwrite(form, field, '', ToAdd, true);
-}
-
-function BBCmm(form, field, type) {
-	var URL = prompt("Enter the "+type+" file URL", "http://");
-	if (URL == null) { return; }
-	if (!URL) { return alert("Error: You didn't write the "+type+" file URL"); }
-	var WS = prompt("Enter the "+type+" width", "250");
-	if (WS == null) { return; }
-	if (!WS) { WS = 250; }
-	var HS = prompt("Enter the "+type+" height", "200");
-	if (HS == null) { return; }
-	if (!HS) { HS = 200; }
-	BBCwrite(form, field, '', "["+type+" width="+WS+" height="+HS+"]"+URL+"[/"+type+"]", true);
 }
 
 function BBCurl(form, field) {
@@ -144,23 +108,6 @@ function BBCwrite(form, field, start, end, force) {
 
 function storeCaret(text) {
 	if (text.createTextRange) text.caretPos = document.selection.createRange().duplicate();
-}
-
-function bbstyle(bbnumber) {
-	return true;
-}
-
-function preview(form, field) {	
-	if ( document.forms[form].elements[field].value != "" )
-	{	
-		var loc = document.location.toString();
-		var idx = loc.indexOf( '&' )
-		
-		if ( idx > 0 ) 
-			loc = loc.substring ( 0 , idx );
-		
-		document.location = loc + "&action=preview&content=" + document.forms[form].elements[field].value + "&key=" + document.forms[form].elements["key"].value;
-	}
 }
 
 function helpline ( form, field, text ) {

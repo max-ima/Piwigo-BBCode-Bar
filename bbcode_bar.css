@@ -1,6 +1,7 @@
 .outils {   
   margin-left: 0pt;
   margin-right: auto;
+  margin-top:-0.25em;
 }
 
 .bbcbutton {
@@ -20,6 +21,7 @@
 
 .genmed {
 	color:#000000;
+	background-color:#fff;
 }
 
 .helpline{

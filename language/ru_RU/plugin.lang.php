@@ -1,7 +1,4 @@
 <?php
-	global $lang; /*é*/
-	
-	$lang['admin_liste'] 		= "Список:";	
 	
 	$lang['p_help'] 		= "Параграф: [p]параграф[/p]";	
 	$lang['b_help'] 		= "Жирный: [b]жирный[/b]";
@@ -20,13 +17,13 @@
 	$lang['mail_help'] 		= "E-mail: [email]электронный адрес[/email]";	
 	
 	$lang['size_help'] 		= "Размер шрифта: [size=X]текст[/size]";
-	$lang['tiny'] 		= "Крошечный";
-	$lang['small'] 		= "Маленький";
-	$lang['normal'] 	= "Нормальный";
-	$lang['large'] 		= "Большой";
-	$lang['huge'] 		= "Громадный";	
+	$lang['tiny'] 			= "Крошечный";
+	$lang['small'] 			= "Маленький";
+	$lang['normal'] 		= "Нормальный";
+	$lang['large'] 			= "Большой";
+	$lang['huge'] 			= "Громадный";	
 	
-	$lang['fc_help'] 	= "Цвет шрифта : [color=color]текст[/color]";
+	$lang['fc_help'] 		= "Цвет шрифта : [color=color]текст[/color]";
 	$lang['default_help']	= "По умолчанию";
 	$lang['maroon_help'] 	= "Бордовый";		
 	$lang['red_help'] 		= "Красный";			
@@ -43,11 +40,8 @@
 	$lang['white_help'] 	= "Белый";
 	$lang['black_help'] 	= "Черный";
 	
-	$lang['preview'] 		= "Предпросмотр";
-	
 	$lang['help']			= "Легко: Форматирование может быть применено к выбранному тексту.";
 	
 	$lang['repicon']		= "Директория с иконками";
   
-  $lang['bbcb_config_saved'] = "Конфигурация сохранена";
 ?>
