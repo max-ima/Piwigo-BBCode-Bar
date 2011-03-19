@@ -6,6 +6,7 @@
 
 <form method="post" action="" class="properties" ENCTYPE="multipart/form-data"> 
 	<fieldset>
+		<legend>{'Parameters'|@translate}</legend>
 		<ul>
 			<li>
 				<span class="property">{'p_help'|@translate}</span>
@@ -58,9 +59,6 @@
 			<li>
 				<span class="property">{'mail_help'|@translate}</span>
 				<input type="checkbox" name="chkb12" {$CHKB12_STATUS} value="1" /> <img src="plugins/bbcode_bar/icon/mail.png" border="0"> &nbsp; <img src="plugins/bbcode_bar/icon/mail1.png" border="0">
-			</li>
-			<li>
-				&nbsp;
 			</li>
 			<li>
 				<span class="property">{'size_help'|@translate}</span>

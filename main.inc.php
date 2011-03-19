@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name: BBCode Bar
-Version: 2.2.0
+Version: 2.2.a
 Description: Allow use BBCode for comments and descriptions.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=140
 Author: Atadilo & P@t & Mistic
@@ -19,7 +19,14 @@ function init_bbcode_bar()
 {
 	remove_event_handler('render_comment_content', 'render_comment_content');
 	add_event_handler('render_comment_content', 'BBCodeParse');
-	add_event_handler('loc_begin_picture', 'set_bbcode_bar');
+	add_event_handler('loc_after_page_header', 'add_bbcode_bar');
+}
+
+function add_bbcode_bar() {
+	global $page;
+	if ($page['body_id'] == 'theCommentsPage' OR $page['body_id'] == 'thePicturePage') {
+		set_bbcode_bar();
+	}
 }
 
 if (script_basename() == 'admin')
@@ -34,4 +41,5 @@ if (script_basename() == 'admin')
 		return $menu;
 	}
 }
+
 ?>

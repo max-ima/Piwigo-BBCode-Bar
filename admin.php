@@ -10,8 +10,7 @@ if (isset($_POST['submit']))
 {	
 	// nouveau tableau de config
 	unset($conf_bbcode_bar);
-	for ($i=0; $i<=15; $i++)
-	{
+	for ($i=0; $i<=15; $i++) {
 		$conf_bbcode_bar[] = (isset($_POST['chkb'.sprintf("%02d", $i)])) ? $_POST['chkb'.sprintf("%02d", $i)] : 0;
 	}
 	$conf_bbcode_bar[] = (isset($_POST['text17'])) ? $_POST['text17'] : 'plugins/bbcode_bar/icon';
@@ -23,12 +22,10 @@ if (isset($_POST['submit']))
 		WHERE param="bbcode_bar"';
     pwg_query($query);
     array_push($page['infos'], l10n('Information data registered in database'));
-	
 }
 
 // Parametrage du template
-for ($i=0; $i<=15; $i++)
-{
+for ($i=0; $i<=15; $i++) {
 	$template->assign('CHKB'.sprintf("%02d", $i).'_STATUS', ($conf_bbcode_bar[$i] == 1) ? 'checked="checked"' : null);
 }
 $template->assign(array('TEXT17_STATUS' => $conf_bbcode_bar[16]));

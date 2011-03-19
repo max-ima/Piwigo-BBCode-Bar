@@ -3,31 +3,29 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
  
 function set_bbcode_bar()
 {
-	global $template, $conf, $lang, $user, $pwg_loaded_plugins;
+	global $template, $conf, $lang, $user, $pwg_loaded_plugins, $page;
 	load_language('plugin.lang', dirname(__FILE__) . '/');
 	$conf_bbcode_bar = explode("," , $conf['bbcode_bar']);
 	$template->set_filename('bbcode_bar', dirname(__FILE__).'/bbcode_bar.tpl');
 
 	// buttons
-	for ($i=0; $i<=15; $i++)
-	{
+	for ($i=0; $i<=15; $i++) {
 		if ($conf_bbcode_bar[$i] == 1) $template->assign('BBCode_bar_button_'.sprintf("%02d", $i), true);
 	}
 	$template->assign('repicon', $conf_bbcode_bar[16]);
 	
-	// edit field has a different id
-	if (isset($_GET['action']) AND $_GET['action'] == 'edit_comment')
-	{
+	// edit field has different id
+	if (
+		(isset($_GET['action']) AND $_GET['action'] == 'edit_comment') 
+		OR (isset($page['body_id']) AND $page['body_id'] == 'theCommentsPage')
+	) {
 		$template->assign('form_name', 'editComment');
-	}
-	else
-	{
+	} else {
 		$template->assign('form_name', 'addComment');
 	}
 
 	// smilies support
-	if (isset($pwg_loaded_plugins['SmiliesSupport']))
-	{
+	if (isset($pwg_loaded_plugins['SmiliesSupport'])) {
 		$template->assign('BBCode_bar_SmiliesSupport', array('SMILIESSUPPORT_PAGE' => SmiliesTable()));
 	}
 
@@ -65,21 +63,16 @@ function CheckTags($str)
 					//pop stack
 					while (($temp = array_pop($tags)))
 					{
-						if ($temp != $tag)
-						{
+						if ($temp != $tag) {
 							$before_tag.='[/'.$temp.']';
-						}
-						else 
-						{
+						} else {
 							$before_tag.='[/'.$tag.']';
 							break;
 						}
 					}
 					$end_pos += strlen($before_tag)+strlen($after_tag)-strlen($str);
 					$str = $before_tag.$after_tag;
-				} 
-				else 
-				{ // push stack
+				} else { // push stack
 					array_push($tags,$tag);
 				}
 			}
@@ -232,4 +225,5 @@ function BBCodeParse($str)
 	
 	return preg_replace($patterns, $replacements, $str);
 }
+
 ?>

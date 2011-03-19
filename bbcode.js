@@ -48,7 +48,7 @@ function BBClist(form, field, img) {
 		img.src = img.src.replace(re, code+"1.$1");
 		bbcode[form+field+code] = 1;
 	} else {
-		ToAdd = "\n[/"+code+"]\n";
+		ToAdd = "[/li]\n[/"+code+"]\n";
 		re = new RegExp(code+"1.(\\w+)$");
 		img.src = img.src.replace(re, code+".$1");
 		bbcode[form+field+code] = null;
