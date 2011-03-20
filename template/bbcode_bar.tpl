@@ -1,5 +1,5 @@
-{combine_script id="bbcodebar" path=$ROOT_URL|@cat:"plugins/bbcode_bar/bbcode.js"}
-{combine_css path=$ROOT_URL|@cat:"plugins/bbcode_bar/bbcode_bar.css"}
+{combine_script id="bbcodebar" path=$BBCODE_PATH|@cat:"template/bbcode.js"}
+{combine_css path=$BBCODE_PATH|@cat:"template/bbcode_bar.css"}
 
 <div id="outils" width="500pt">
 	<table class="outils">	

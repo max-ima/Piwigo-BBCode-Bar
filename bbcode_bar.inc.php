@@ -6,7 +6,6 @@ function set_bbcode_bar()
 	global $template, $conf, $lang, $user, $pwg_loaded_plugins, $page;
 	load_language('plugin.lang', dirname(__FILE__) . '/');
 	$conf_bbcode_bar = explode("," , $conf['bbcode_bar']);
-	$template->set_filename('bbcode_bar', dirname(__FILE__).'/bbcode_bar.tpl');
 
 	// buttons
 	for ($i=0; $i<=15; $i++) {
@@ -29,6 +28,8 @@ function set_bbcode_bar()
 		$template->assign('BBCode_bar_SmiliesSupport', array('SMILIESSUPPORT_PAGE' => SmiliesTable()));
 	}
 
+	$template->assign('BBCODE_PATH', BBcode_PATH);
+	$template->set_filename('bbcode_bar', dirname(__FILE__).'/template/bbcode_bar.tpl');
 	$lang['Comment'] .= $template->parse('bbcode_bar', true);			
 }
 
