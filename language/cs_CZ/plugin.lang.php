@@ -10,6 +10,7 @@
 	$lang['right_help'] 	= "Na pravo : [right]na pravo[/right]";
 	$lang['ul_help'] 		= "Jednoduchý seznam : [ul][li]element[/li][/ul]";
 	$lang['ol_help'] 		= "Číslovaný seznam: [ol][li]element[/li][/ol]";
+	$lang['li_help'] 		= "List element : [li]element[/li]";
 	
 	$lang['quote_help'] 	= "Citace : [quote]citát[/quote]";
 	$lang['img_help'] 		= "Obrázek : [img]obrázek[/img]";
@@ -23,25 +24,15 @@
 	$lang['large'] 			= "Veliký";
 	$lang['huge'] 			= "Obří";	
 	
-	$lang['fc_help'] 		= "Barva písma : [color=color]text[/color]";
-	$lang['default_help']	= "Defaultní";
-	$lang['maroon_help'] 	= "Tmavě červená";		
+	$lang['color_help'] 		= "Barva písma : [color=color]text[/color]";	
 	$lang['red_help'] 		= "Červená";			
 	$lang['orange_help'] 	= "Oranžová";	 	
-	$lang['brown_help'] 	= "Hnědá";
 	$lang['yellow_help'] 	= "Žlutá";	 	
 	$lang['green_help'] 	= "Zelená"; 	
-	$lang['olive_help'] 	= "Olivová";	 	
-	$lang['cyan_help'] 		= "Azurová";
 	$lang['blue_help'] 		= "Modrá";	
-	$lang['darkblue_help']	= "Tmavá modrá";
-	$lang['indigo_help'] 	= "Indigo";
-	$lang['violet_help'] 	= "Fialková";
+	$lang['purple_help'] 	= "Fialková";
 	$lang['white_help'] 	= "Bílá";
+	$lang['grey_help'] 		= "Grey";
 	$lang['black_help'] 	= "Černá";
-	
-	$lang['help']			= "Nejjednodušeji: formátování může být aplikováno jen na označený text.";
-	
-	$lang['repicon']		= "Složka ikon.";
 
 ?>

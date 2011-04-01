@@ -10,6 +10,7 @@
 	$lang['right_help']     = "Høyre : [right]høyre[/right]";
 	$lang['ul_help']         = "Uordnet Liste : [ul][li]element[/li][/ul]";
 	$lang['ol_help']         = "Ordnet Liste : [ol][li]element[/li][/ol]";
+	$lang['li_help'] 		= "List element : [li]element[/li]";
 
 	$lang['quote_help']     = "Spørring : [quote]spørring[/quote]";
 	$lang['img_help']         = "Img : [img]img[/img]";
@@ -23,25 +24,15 @@
 	$lang['large']         = "Stor";
 	$lang['huge']         = "Mega";
 
-	$lang['fc_help']     = "Font farge : [color=color]tekst[/color]";
-	$lang['default_help']    = "Standard";
-	$lang['maroon_help']     = "Maroon";
+	$lang['color_help']     = "Font farge : [color=color]tekst[/color]";
 	$lang['red_help']         = "Rød";
 	$lang['orange_help']     = "Orange";
-	$lang['brown_help']     = "Brun";
 	$lang['yellow_help']     = "Gul";
 	$lang['green_help']     = "Grønn";
-	$lang['olive_help']     = "Oliven";
-	$lang['cyan_help']         = "Cyan";
 	$lang['blue_help']         = "Blå";
-	$lang['darkblue_help']    = "Mørk Blå";
-	$lang['indigo_help']     = "Indigo";
-	$lang['violet_help']     = "Fiolett";
+	$lang['purple_help']     = "Fiolett";
 	$lang['white_help']     = "Vit";
+	$lang['grey_help'] 		= "Grey";
 	$lang['black_help']     = "Svart";
-
-	$lang['help']            = "Enkel måte: En formatering kan gjøres på den valgte teksten.";
-
-	$lang['repicon']        = "Ikon mappe.";
 
 ?>

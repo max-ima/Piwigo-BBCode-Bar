@@ -1,101 +1,69 @@
-{combine_script id="bbcodebar" path=$BBCODE_PATH|@cat:"template/bbcode.js"}
-{combine_css path=$BBCODE_PATH|@cat:"template/bbcode_bar.css"}
+{combine_script id="markitup" require='jquery' path=$BBCODE_PATH|@cat:"template/markitup/jquery.markitup.js"}
+{combine_css path=$BBCODE_PATH|@cat:"template/markitup/style.markitup.css"}
 
-<div id="outils" width="500pt">
-	<table class="outils">	
-		<tr>			
-			{if isset($BBCode_bar_button_00)}
-			<td><img class="bbcbutton" title="{'p_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'p_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="p" src="{$repicon}/p.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_01)}
-			<td><img class="bbcbutton" title="{'b_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'b_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="b" src="{$repicon}/b.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_02)}
-			<td><img class="bbcbutton" title="{'i_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'i_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="i" src="{$repicon}/i.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_03)}
-			<td><img class="bbcbutton" title="{'u_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'u_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="u" src="{$repicon}/u.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_04)}
-			<td><img class="bbcbutton" title="{'s_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'s_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="s" src="{$repicon}/s.png" border="0"></td>
-			{/if}
-			
-			{if isset($BBCode_bar_button_05) OR isset($BBCode_bar_button_06) OR isset($BBCode_bar_button_07) OR isset($BBCode_bar_button_08)}
-			<td> &nbsp; &nbsp; </td>
-			{/if}
-			
-			{if isset($BBCode_bar_button_05)}
-			<td><img class="bbcbutton" title="{'center_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'center_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="center" src="{$repicon}/center.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_06)}
-			<td><img class="bbcbutton" title="{'right_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'right_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="right" src="{$repicon}/right.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_07)}
-			<td><img class="bbcbutton" title="{'ul_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'ul_help'|@translate}')" onclick="BBClist('{$form_name}','content',this)" name="ul" src="{$repicon}/ul.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_08)}
-			<td><img class="bbcbutton" title="{'ol_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'ol_help'|@translate}')" onclick="BBClist('{$form_name}','content',this)" name="ol" src="{$repicon}/ol.png" border="0"></td>
-			{/if}
-			
-			{if isset($BBCode_bar_SmiliesSupport)}
-			<td> &nbsp; &nbsp; </td>
-			<td>{$BBCode_bar_SmiliesSupport.SMILIESSUPPORT_PAGE}</td>
-			{/if}
-			
-			{if isset($BBCode_bar_button_09) OR isset($BBCode_bar_button_10) OR isset($BBCode_bar_button_11) OR isset($BBCode_bar_button_12)}
-			<td> &nbsp; &nbsp; </td>
-			{/if}
-			
-			{if isset($BBCode_bar_button_09)}	
-			<td><img class="bbcbutton" title="{'quote_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'quote_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="quote" src="{$repicon}/quote.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_10)}
-			<td><img class="bbcbutton" title="{'img_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'img_help'|@translate}')" onclick="BBCcode('{$form_name}','content',this)" name="img" src="{$repicon}/image.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_11)}
-			<td><img class="bbcbutton" title="{'url_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'url_help'|@translate}')" onclick="BBCurl('{$form_name}','content')" name="url" src="{$repicon}/link.png" border="0"></td>
-			{/if}
-			{if isset($BBCode_bar_button_12)}
-			<td><img class="bbcbutton" title="{'mail_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'mail_help'|@translate}')" onclick="BBCwmi('{$form_name}','content','email')" name="email" src="{$repicon}/mail.png" border="0"></td>
-			{/if}
-			
-			{if isset($BBCode_bar_button_13) OR isset($BBCode_bar_button_14)}
-			<td> &nbsp; &nbsp; </td>
-			{/if}
-			
-			{if isset($BBCode_bar_button_13)}
-			<td><select title="{'size_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'size_help'|@translate}')" onchange="BBCfs('{$form_name}','content',this)" title="{'size_help'|@translate}">
-				    <option class="genmed" value="7">{'tiny'|@translate}</option>
-					<option class="genmed" value="9">{'small'|@translate}</option>
-					<option class="genmed" value="12" selected="selected" >{'normal'|@translate}</option>
-					<option class="genmed" value="18">{'large'|@translate}</option>
-					<option class="genmed" value="24">{'huge'|@translate}</option>
-				</select>
-			</td>
-			{/if}
-			{if isset($BBCode_bar_button_14)}
-			<td><select title="{'fc_help'|@translate}" onmouseout="helpline('{$form_name}','helpbox', '{'help'|@translate}')" onmouseover="helpline('{$form_name}','helpbox', '{'fc_help'|@translate}')" onchange="BBCfc('{$form_name}','content',this)" title="{'fc_help'|@translate}">
-				    <option class="genmed" value="" style="color: black;" selected="selected" >{'default_help'|@translate}</option>
-					<option class="genmed" value="maroon" style="color: maroon;">{'maroon_help'|@translate}</option>
-					<option class="genmed" value="red" style="color: red;">{'red_help'|@translate}</option>
-					<option class="genmed" value="orange" style="color: orange;">{'orange_help'|@translate}</option>
-					<option class="genmed" value="brown" style="color: brown;">{'brown_help'|@translate}</option>
-					<option class="genmed" value="yellow" style="color: yellow; background-color:inherit;">{'yellow_help'|@translate}</option>
-					<option class="genmed" value="green" style="color: green;">{'green_help'|@translate}</option>
-					<option class="genmed" value="olive" style="color: olive;">{'olive_help'|@translate}</option>
-					<option class="genmed" value="cyan" style="color: cyan;">{'cyan_help'|@translate}</option>
-					<option class="genmed" value="blue" style="color: blue;">{'blue_help'|@translate}</option>
-					<option class="genmed" value="darkblue" style="color: darkblue;">{'darkblue_help'|@translate}</option>
-					<option class="genmed" value="indigo" style="color: indigo;">{'indigo_help'|@translate}</option>
-					<option class="genmed" value="violet" style="color: violet;">{'violet_help'|@translate}</option>
-					<option class="genmed" value="white" style="color: white; background-color:inherit;">{'white_help'|@translate}</option>
-					<option class="genmed" value="black" style="color: black;">{'black_help'|@translate}</option>
-				</select>
-			</td>			
-			{/if}
-		</tr>
-	</table>
-	{if isset($BBCode_bar_button_15)}
-	<input class="helpline" type="text" value="{'help'|@translate}" maxlength="150" size="80" name="helpbox"/>
-	{/if}
-</div>
+{footer_script require='jquery'}
+BBCodeBar = {ldelim}
+	markupSet: [
+		{if isset($BBC_b)}{ldelim}name:'{'b_help'|@translate}', key:'B', openWith:'[b]', closeWith:'[/b]', className:'markItUpBold'},{/if}
+		{if isset($BBC_i)}{ldelim}name:'{'i_help'|@translate}', key:'I', openWith:'[i]', closeWith:'[/i]', className:'markItUpItalic'},{/if}
+		{if isset($BBC_u)}{ldelim}name:'{'u_help'|@translate}', key:'U', openWith:'[u]', closeWith:'[/u]', className:'markItUpUnderline'},{/if}
+		{if isset($BBC_s)}{ldelim}name:'{'s_help'|@translate}', key:'S', openWith:'[s]', closeWith:'[/s]', className:'markItUpStroke'},{/if}
+		
+		{if isset($BBC_p) OR isset($BBC_center) OR isset($BBC_right) OR isset($BBC_quote)}{ldelim}separator:'|'},{/if}
+		
+		{if isset($BBC_p)}{ldelim}name:'{'p_help'|@translate}', openWith:'[p]', closeWith:'[/p]', className:'markItUpParagraph'},{/if}
+		{if isset($BBC_center)}{ldelim}name:'{'center_help'|@translate}', openWith:'[center]', closeWith:'[/center]', className:'markItUpCenter'},{/if}
+		{if isset($BBC_right)}{ldelim}name:'{'right_help'|@translate}', openWith:'[right]', closeWith:'[/right]', className:'markItUpRight'},{/if}
+		{if isset($BBC_quote)}{ldelim}name:'{'quote_help'|@translate}', openWith:'[quote]', closeWith:'[/quote]', className:'markItUpQuote'},{/if}
+		
+		{if isset($BBC_ul) OR isset($BBC_ol) OR isset($BBC_li)}{ldelim}separator:'|'},{/if}
+		
+		{if isset($BBC_ul)}{ldelim}name:'{'ul_help'|@translate}', openWith:'[ul]\n', closeWith:'\n[/ul]', className:'markItUpListUL'},{/if}
+		{if isset($BBC_ol)}{ldelim}name:'{'ol_help'|@translate}', openWith:'[ol]\n', closeWith:'\n[/ol]', className:'markItUpListOL'},{/if}
+		{if isset($BBC_ul) OR isset($BBC_ol)}{ldelim}name:'{'li_help'|@translate}', openWith:'[li]', closeWith:'[/li]', className:'markItUpListLI'},{/if}
+		
+		{if isset($BBC_img) OR isset($BBC_url) OR isset($BBC_mail)}{ldelim}separator:'|' },{/if}
+		
+		{if isset($BBC_img)}{ldelim}name:'{'img_help'|@translate}', key:'P', replaceWith:'[img][![Url]!][/img]', className:'markItUpPicture'},{/if}
+		{if isset($BBC_url)}{ldelim}name:'{'url_help'|@translate}', key:'L', openWith:'[url=[![Url]!]]', closeWith:'[/url]', className:'markItUpLink'},{/if}
+		{if isset($BBC_email)}{ldelim}name:'{'mail_help'|@translate}', key:'M', replaceWith:'[email][![Mail]!][/email]', className:'markItUpMail'},{/if}
+		
+		{if isset($BBC_size) OR isset($BBC_color) OR isset($BBC_smilies)}{ldelim}separator:'|'},{/if}
+		
+		{if isset($BBC_size)}
+		{ldelim}name:'{'size_help'|@translate}', className:'markItUpSize',
+			dropMenu :[
+				{ldelim}name:'{'tiny'|@translate}', openWith:'[size=7]', closeWith:'[/size]' },
+				{ldelim}name:'{'small'|@translate}', openWith:'[size=9]', closeWith:'[/size]' },
+				{ldelim}name:'{'normal'|@translate}', openWith:'[size=12]', closeWith:'[/size]' },
+				{ldelim}name:'{'large'|@translate}', openWith:'[size=18]', closeWith:'[/size]' },
+				{ldelim}name:'{'huge'|@translate}', openWith:'[size=24]', closeWith:'[/size]' },
+			]
+		},
+		{/if}
+		{if isset($BBC_color)}
+		{ldelim}name:'{'color_help'|@translate}', className:'markItUpColors', openWith:'[color=[![Color]!]]', closeWith:'[/color]', 
+			dropMenu: [
+				{ldelim}name:'{'yellow_help'|@translate}',	openWith:'[color=yellow]', 	closeWith:'[/color]', className:"col1-1" },
+				{ldelim}name:'{'orange_help'|@translate}',	openWith:'[color=orange]', 	closeWith:'[/color]', className:"col1-2" },
+				{ldelim}name:'{'red_help'|@translate}', 	openWith:'[color=red]', 	closeWith:'[/color]', className:"col1-3" },
+				
+				{ldelim}name:'{'blue_help'|@translate}', 	openWith:'[color=blue]', 	closeWith:'[/color]', className:"col2-1" },
+				{ldelim}name:'{'purple_help'|@translate}', 	openWith:'[color=purple]', 	closeWith:'[/color]', className:"col2-2" },
+				{ldelim}name:'{'green_help'|@translate}', 	openWith:'[color=green]', 	closeWith:'[/color]', className:"col2-3" },
+				
+				{ldelim}name:'{'white_help'|@translate}', 	openWith:'[color=white]', 	closeWith:'[/color]', className:"col3-1" },
+				{ldelim}name:'{'grey_help'|@translate}', 	openWith:'[color=gray]', 	closeWith:'[/color]', className:"col3-2" },
+				{ldelim}name:'{'black_help'|@translate}',	openWith:'[color=black]', 	closeWith:'[/color]', className:"col3-3" }
+			]
+		},
+		{/if}
+	]
+};
+
+jQuery(document).ready(function() {ldelim}
+	jQuery('#{$form_name} textarea').markItUp(BBCodeBar);
+});
+{/footer_script}
+
+{$BBC_smilies}

@@ -10,6 +10,7 @@
 	$lang['right_help']     = "Līdzināts pa labi : [right]right[/right]";
 	$lang['ul_help']         = "Nesakārtots saraksts : [ul][li]element[/li][/ul]";
 	$lang['ol_help']         = "Sakārtots Saraksts : [ol][li]element[/li][/ol]";
+	$lang['li_help'] 		= "List element : [li]element[/li]";
 
 	$lang['quote_help']     = "Pēdiņas : [quote]quote[/quote]";
 	$lang['img_help']         = "Att : [img]img[/img]";
@@ -23,25 +24,15 @@
 	$lang['large']         = "Liels";
 	$lang['huge']         = "Milzīgs";
 
-	$lang['fc_help']     = "Fonta krāsa : [color=color]text[/color]";
-	$lang['default_help']    = "Pēc noklusējuma";
-	$lang['maroon_help']     = "Kastaņbrūna";
+	$lang['color_help']     = "Fonta krāsa : [color=color]text[/color]";
 	$lang['red_help']         = "Sarkana";
 	$lang['orange_help']     = "Oranža";
-	$lang['brown_help']     = "Brūna";
 	$lang['yellow_help']     = "Dzeltena";
 	$lang['green_help']     = "Zaļa";
-	$lang['olive_help']     = "Olīva";
-	$lang['cyan_help']         = "Ciāna";
 	$lang['blue_help']         = "Zila";
-	$lang['darkblue_help']    = "Tumši Zila";
-	$lang['indigo_help']     = "Indigo";
-	$lang['violet_help']     = "Violēta";
+	$lang['purple_help']     = "Violēta";
 	$lang['white_help']     = "Balta";
+	$lang['grey_help'] 		= "Grey";
 	$lang['black_help']     = "Melna";
-
-	$lang['help']            = "Pavisam viegli: Formatējumu iespējams pielietot tieši izvēlētajam tekstam.";
-	
-	$lang['repicon']        = "Ikonu mape.";
 
 ?>

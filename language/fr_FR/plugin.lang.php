@@ -10,6 +10,7 @@
 	$lang['right_help'] 	= "Droite : [right]droite[/right]";
 	$lang['ul_help'] 		= "Liste : [ul][li]élément[/li][/ul]";
 	$lang['ol_help'] 		= "Liste Numéroté : [ol][li]élément[/li][/ol]";
+	$lang['li_help'] 		= "Element de liste : [li]élément[/li]";
 	
 	$lang['quote_help'] 	= "Citation : [quote]Citation[/quote]";
 	$lang['img_help'] 		= "Image : [img]Image[/img]";
@@ -23,25 +24,15 @@
 	$lang['large'] 			= "Grand";
 	$lang['huge'] 			= "Très grand";	
 	
-	$lang['fc_help'] 		= "Couleur des caractères  : [color=couleur]texte[/color]";
-	$lang['default_help']	= "Défaut";
-	$lang['maroon_help'] 	= "Rouge foncé";		
+	$lang['color_help'] 	= "Couleur : [color=couleur]texte[/color]";	
 	$lang['red_help'] 		= "Rouge";			
 	$lang['orange_help'] 	= "Orange";	 	
-	$lang['brown_help'] 	= "Marron";
 	$lang['yellow_help'] 	= "Jaune";	 	
 	$lang['green_help'] 	= "Vert"; 	
-	$lang['olive_help'] 	= "Olive";	 	
-	$lang['cyan_help'] 		= "Cyan";
 	$lang['blue_help'] 		= "Bleu";	
-	$lang['darkblue_help']	= "Bleu Foncé";
-	$lang['indigo_help'] 	= "Indigo";
-	$lang['violet_help'] 	= "Violet";
+	$lang['purple_help'] 	= "Violet";
 	$lang['white_help'] 	= "Blanc";
+	$lang['grey_help'] 		= "Gris";
 	$lang['black_help'] 	= "Noir";
-		
-	$lang['help']			= "Astuce : Une mise en forme peut être appliquée au texte sélectionné.";
-	
-	$lang['repicon']		= "Répertoire des icônes.";
   
 ?>

@@ -3,32 +3,37 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 global $conf, $template;
 load_language('plugin.lang', BBcode_PATH);
-$conf_bbcode_bar = explode("," , $conf['bbcode_bar']);
+
+// Met à jour la configuration si necessaire
+if (strpos($conf['bbcode_bar'],',') !== false)
+{
+	include(BBcode_PATH .'maintain.inc.php');
+	plugin_activate();
+}
+
+$conf_bbcode_bar = unserialize($conf['bbcode_bar']);
 
 // Enregistrement de la configuration
 if (isset($_POST['submit']))
 {	
 	// nouveau tableau de config
 	unset($conf_bbcode_bar);
-	for ($i=0; $i<=15; $i++) {
-		$conf_bbcode_bar[] = (isset($_POST['chkb'.sprintf("%02d", $i)])) ? $_POST['chkb'.sprintf("%02d", $i)] : 0;
+	foreach(unserialize(BBcode_codes) as $key) {
+		$conf_bbcode_bar[$key] = (isset($_POST[$key])) ? true : false;
 	}
-	$conf_bbcode_bar[] = (isset($_POST['text17'])) ? rtrim($_POST['text17'],'/') : 'plugins/bbcode_bar/icon';
 	
 	// enregistrement
-    $new_value_bbcode_bar = implode ("," , $conf_bbcode_bar);
-    $query = 'UPDATE ' . CONFIG_TABLE . '
-		SET value="' . $new_value_bbcode_bar . '"
-		WHERE param="bbcode_bar"';
+    $query = "UPDATE " . CONFIG_TABLE . "
+		SET value='" . serialize($conf_bbcode_bar) . "'
+		WHERE param='bbcode_bar'";
     pwg_query($query);
     array_push($page['infos'], l10n('Information data registered in database'));
 }
 
 // Parametrage du template
-for ($i=0; $i<=15; $i++) {
-	$template->assign('CHKB'.sprintf("%02d", $i).'_STATUS', ($conf_bbcode_bar[$i] == 1) ? 'checked="checked"' : null);
+foreach(unserialize(BBcode_codes) as $key) {
+	$template->assign(strtoupper($key).'_STATUS', ($conf_bbcode_bar[$key] == 1) ? 'checked="checked"' : null);
 }
-$template->assign('TEXT17_STATUS', $conf_bbcode_bar[16]);
 
 $template->assign('BBCODE_PATH', BBcode_PATH);
 $template->set_filename('bbcode_bar_conf', dirname(__FILE__) . '/template/bbcode_bar_admin.tpl');

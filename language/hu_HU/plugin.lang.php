@@ -10,6 +10,7 @@
 	$lang['right_help'] 	= "Jobbra : [right]illesztés jobbra[/right]";
 	$lang['ul_help'] 		= "Számozatlan lista : [ul][li]elem[/li][/ul]";
 	$lang['ol_help'] 		= "Számozott lista : [ol][li]elem[/li][/ol]";
+	$lang['li_help'] 		= "List element : [li]element[/li]";
 	
 	$lang['quote_help'] 	= "Idézet : [quote]idézett szöveg[/quote]";
 	$lang['img_help'] 		= "Kép : [img]kép fájlnév[/img]";
@@ -23,25 +24,15 @@
 	$lang['large'] 			= "Közepes";
 	$lang['huge'] 			= "Nagy";	
 	
-	$lang['fc_help'] 		= "Betűszín : [color=szín]betű színe[/color]";
-	$lang['default_help']	= "Alapértelmezett";
-	$lang['maroon_help'] 	= "Gesztenyebarna";		
+	$lang['color_help'] 	= "Betűszín : [color=szín]betű színe[/color]";	
 	$lang['red_help'] 		= "Piros";			
 	$lang['orange_help'] 	= "Narancssárga";	 	
-	$lang['brown_help'] 	= "Barna";
 	$lang['yellow_help'] 	= "Sárga";	 	
 	$lang['green_help'] 	= "Zöld"; 	
-	$lang['olive_help'] 	= "Olajzöld";	 	
-	$lang['cyan_help'] 		= "Ciánkék";
 	$lang['blue_help'] 		= "Kék";	
-	$lang['darkblue_help']	= "Sötétkék";
-	$lang['indigo_help'] 	= "Indigó";
-	$lang['violet_help'] 	= "Ibolya";
+	$lang['purple_help'] 	= "Ibolya";
 	$lang['white_help'] 	= "Fehér";
+	$lang['grey_help'] 		= "Grey";
 	$lang['black_help'] 	= "Fekete";
-		
-	$lang['help']			= "Automatikus használat: A kód a kijelölt szövegre alkalmazható.";
-	
-	$lang['repicon']		= "Ikon könyvtár.";
   
 ?>

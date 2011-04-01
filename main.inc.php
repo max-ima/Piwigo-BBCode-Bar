@@ -11,6 +11,7 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 define('BBcode_DIR' , basename(dirname(__FILE__)));
 define('BBcode_PATH' , PHPWG_PLUGINS_PATH . BBcode_DIR . '/');
+define('BBcode_codes', serialize(array('b','i','u','s','p','center','right','quote','ul','ol','img','url','email','size','color')));
 
 include_once(BBcode_PATH.'bbcode_bar.inc.php');
 add_event_handler('init', 'init_bbcode_bar');
@@ -24,7 +25,8 @@ function init_bbcode_bar()
 
 function add_bbcode_bar() {
 	global $page;
-	if ($page['body_id'] == 'theCommentsPage' OR $page['body_id'] == 'thePicturePage') {
+	
+	if (isset($page['body_id']) AND $page['body_id'] == 'thePicturePage') {
 		set_bbcode_bar();
 	}
 }
@@ -41,5 +43,6 @@ if (script_basename() == 'admin')
 		return $menu;
 	}
 }
+
 
 ?>

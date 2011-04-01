@@ -5,40 +5,39 @@ function set_bbcode_bar()
 {
 	global $template, $conf, $lang, $user, $pwg_loaded_plugins, $page;
 	load_language('plugin.lang', dirname(__FILE__) . '/');
-	$conf_bbcode_bar = explode("," , $conf['bbcode_bar']);
+	$conf_bbcode_bar = unserialize($conf['bbcode_bar']);
 
 	// buttons
-	for ($i=0; $i<=15; $i++) {
-		if ($conf_bbcode_bar[$i] == 1) $template->assign('BBCode_bar_button_'.sprintf("%02d", $i), true);
+	foreach(unserialize(BBcode_codes) as $key) {
+		if ($conf_bbcode_bar[$key]) $template->assign('BBC_'.$key, true);
 	}
-	$template->assign('repicon', $conf_bbcode_bar[16]);
 	
 	// edit field has different id
-	if (
-		(isset($_GET['action']) AND $_GET['action'] == 'edit_comment') 
-		OR (isset($page['body_id']) AND $page['body_id'] == 'theCommentsPage')
-	) {
-		$template->assign('form_name', 'editComment');
-	} else {
-		$template->assign('form_name', 'addComment');
-	}
-
-	// smilies support
-	if (isset($pwg_loaded_plugins['SmiliesSupport'])) {
-		$template->assign('BBCode_bar_SmiliesSupport', array('SMILIESSUPPORT_PAGE' => SmiliesTable()));
-	}
+	// if (
+		// (isset($_GET['action']) AND $_GET['action'] == 'edit_comment') 
+		// OR (isset($page['body_id']) AND $page['body_id'] == 'theCommentsPage')
+	// ) {
+		// $template->assign('form_name', 'editComment');
+	// } else {
+		// $template->assign('form_name', 'addComment');
+	// }
+	$template->assign('form_name', 'addComment');
 
 	$template->assign('BBCODE_PATH', BBcode_PATH);
 	$template->set_filename('bbcode_bar', dirname(__FILE__).'/template/bbcode_bar.tpl');
-	$lang['Comment'] .= $template->parse('bbcode_bar', true);			
+	$template->parse('bbcode_bar', true);		
+
+	// smilies support ## must be parsed avec bbcode_bar, because the javascript must be after bbc's one
+	if (isset($pwg_loaded_plugins['SmiliesSupport']))
+	{
+		set_smiliessupport();
+	}	
 }
 
 
 //Check tags and eventually close malformed tags, return BBCoded String
 function CheckTags($str)
 {
-	//array of known tags
-	$known = array('p','b','i','u','s','center','right','ol','ul','li','quote', 'img','url','email','color', 'size');
 	//storage stack
 	$tags = array();
 
@@ -52,7 +51,7 @@ function CheckTags($str)
 			if ( ($equal_pos = strpos($tag, '=', 0)) !== FALSE)
 			$tag = substr($tag, 0, $equal_pos);
 			//check whether we have a defined tag or not.
-			if (in_array(strtolower($tag),$known) || in_array(strtolower(substr($tag,1)),$known))
+			if (in_array(strtolower($tag),unserialize(BBcode_codes)) || in_array(strtolower(substr($tag,1)),unserialize(BBcode_codes)))
 			{
 				//closing tag
 				if ($tag{0} == '/')
@@ -93,93 +92,93 @@ function BBCodeParse($str)
 {
 	global $conf;
 
-	$conf_bbcode_bar = explode("," , $conf['bbcode_bar']);
+	$conf_bbcode_bar = unserialize($conf['bbcode_bar']);
 	$str = CheckTags(nl2br($str));
 
 	$patterns = array();
 	$replacements = array();
 
-	if ( $conf_bbcode_bar[0] == 1 )
+	if ($conf_bbcode_bar['p'])
 	{
 		//Paragraph
 		$patterns[] = '#\[p\](.*?)\[/p\]#is';
 		$replacements[] = '<p>\\1</p>';
 	}
-	if ( $conf_bbcode_bar[1] == 1 )
+	if ($conf_bbcode_bar['b'])
 	{
 		// Bold
 		$patterns[] = '#\[b\](.*?)\[/b\]#is';
-		$replacements[] = '<strong>\\1</strong>';
+		$replacements[] = '<b>\\1</b>';
 	}
-	if ( $conf_bbcode_bar[2] == 1 )
+	if ($conf_bbcode_bar['i'])
 	{
 		//Italic
 		$patterns[] = '#\[i\](.*?)\[/i\]#is';
-		$replacements[] = '<em>\\1</em>';
+		$replacements[] = '<i>\\1</i>';
 	}
-	if ( $conf_bbcode_bar[3] == 1 )
+	if ($conf_bbcode_bar['u'])
 	{
 		//Underline	
 		$patterns[] = '#\[u\](.*?)\[\/u\]#is';
 		$replacements[] = '<u>\\1</u>';
 	}
-	if ( $conf_bbcode_bar[4] == 1 )
+	if ($conf_bbcode_bar['s'])
 	{
 		//Strikethrough
 		$patterns[] = '#\[s\](.*?)\[/s\]#is';
-		$replacements[] = '<del>\\1</del>';
+		$replacements[] = '<s>\\1</s>';
 	}
-	if ( $conf_bbcode_bar[5] == 1 )
+	if ($conf_bbcode_bar['center'])
 	{
 		//Center
 		$patterns[] = '#\[center\](.*?)\[/center\]#is';
 		$replacements[] = '<div align="center"><p>\\1</p></div>';
 	}
-	if ( $conf_bbcode_bar[6] == 1 )
+	if ($conf_bbcode_bar['right'])
 	{
 		//Right
 		$patterns[] = '#\[right\](.*?)\[/right\]#is';
 		$replacements[] = '<div align="right"><p>\\1</p></div>';
 	}
-	if ( $conf_bbcode_bar[7] == 1 )
+	if ($conf_bbcode_bar['ol'])
 	{
 		//Olist
 		$patterns[] = '#\[ol\](.*?)\[/ol\]#is';
 		$replacements[] = '<ol>\\1</ol>';
 	}
-	if ( $conf_bbcode_bar[8] == 1 )
+	if ($conf_bbcode_bar['ul'])
 	{
 		//Ulist
 		$patterns[] = '#\[ul\](.*?)\[/ul\]#is';
 		$replacements[] = '<ul>\\1</ul>';
 	}
-	if (( $conf_bbcode_bar[7] == 1 ) || ( $conf_bbcode_bar[8] == 1 ))
+	if ($conf_bbcode_bar['ol'] || $conf_bbcode_bar['ul'])
 	{
 		//List
 		$patterns[] = '#\[li\](.*?)\[/li\]#is';
 		$replacements[] = '<li>\\1</li>';
 	}
-	if ( $conf_bbcode_bar[9] == 1 )
+	if ($conf_bbcode_bar['quote'])
 	{
 		// Quotes
 		$patterns[] = "#\[quote\](.*?)\[/quote\]#is";
-		$replacements[] = '<blockquote><span style="font-size: 11px; line-height: normal">\\1</span></blockquote>';
+		$replacements[] = '<blockquote><span style="font-size:11px;line-height:normal">\\1</span></blockquote>';
 
 		//Quotes with "user"
 		$patterns[] = "#\[quote=&quot;(.*?)&quot;\](.*?)\[/quote\]#is";
-		$replacements[] = '<blockquote><span style="font-size: 11px; line-height: normal"><b>\\1 : </b><br/>\\2</span></blockquote>';
+		$replacements[] = '<blockquote><span style="font-size:11px;line-height:normal"><b>\\1 : </b><br/>\\2</span></blockquote>';
 
 		//Quotes with user
 		$patterns[] = "#\[quote=(.*?)\](.*?)\[/quote\]#is";
-		$replacements[] = '<blockquote><span style="font-size: 11px; line-height: normal"><b>\\1 : </b><br/>\\2</span></blockquote>';
+		$replacements[] = '<blockquote><span style="font-size:11px;line-height:normal"><b>\\1 : </b><br/>\\2</span></blockquote>';
 	}
-	if ( $conf_bbcode_bar[10] == 1 )
+	if ($conf_bbcode_bar['img'])
 	{
 		//Images
 		$patterns[] = "#\[img\](.*?)\[/img\]#si";
 		$replacements[] = '<img src="\\1" />';
 	}
-	if ( $conf_bbcode_bar[11] == 1 )
+	if ($conf_bbcode_bar['url'])
 	{
 		//[url]xxxx://www.zzzz.yyy[/url]
 		$patterns[] = "#\[url\]([\w]+?://[^ \"\n\r\t<]*?)\[/url\]#is"; 
@@ -193,11 +192,11 @@ function BBCodeParse($str)
 		$patterns[] = "#\[url=([\w]+?://[^ \"\n\r\t<]*?)\](.*?)\[/url\]#is"; 
 		$replacements[] = '<a href="\\1" target="_blank">\\2</a>'; 
 
-		// [url=www.zzzzz.yyy]zZzZz[/url]
+		//[url=www.zzzzz.yyy]zZzZz[/url]
 		$patterns[] = "#\[url=((www|ftp)\.[^ \"\n\r\t<]*?)\](.*?)\[/url\]#is"; 
 		$replacements[] = '<a href="http://\\1" target="_blank">\\2</a>'; 
 
-		// [url="www.zzzzz.yyy"]zZzZz[/url]
+		//[url="www.zzzzz.yyy"]zZzZz[/url]
 		$patterns[] = "#\[url=&quot;((www|ftp)\.[^ \n\r\t<]*?)&quot;\](.*?)\[/url\]#is";
 		$replacements[] = '<a href="http://\\1" target="_blank">\\3</a>';
 
@@ -205,19 +204,19 @@ function BBCodeParse($str)
 		$patterns[] = "#\[url=&quot;([\w]+?://[^ \n\r\t<]*?)&quot;\](.*?)\[/url\]#is";
 		$replacements[] = '<a href="\\1" target="_blank">\\2</a>';
 	}
-	if ( $conf_bbcode_bar[12] == 1 )
+	if ($conf_bbcode_bar['email'])
 	{
 		//[email]samvure@gmail.com[/email]
 		$patterns[] = "#\[email\]([a-z0-9&\-_.]+?@[\w\-]+\.([\w\-\.]+\.)?[\w]+)\[/email\]#is";
 		$replacements[] = '<a href="mailto:\\1">\\1</a>';
 	}
-	if ( $conf_bbcode_bar[13] == 1 )
+	if ($conf_bbcode_bar['size'])
 	{
 		//Size
 		$patterns[] = "#\[size=([1-2]?[0-9])\](.*?)\[/size\]#si";
 		$replacements[] = '<span style="font-size: \\1px; line-height: normal">\\2</span>';
 	}
-	if ( $conf_bbcode_bar[14] == 1 )
+	if ($conf_bbcode_bar['color'])
 	{
 		//Colours
 		$patterns[] = "#\[color=(\#[0-9A-F]{6}|[a-z]+)\](.*?)\[/color\]#si";
