@@ -11,6 +11,9 @@
 	color:#000;
 	text-decoration:none;
 }
+.markItUp textarea {
+	display:block;
+}
 .markItUpContainer  {
 	font:11px Verdana, Arial, Helvetica, sans-serif;
 }
@@ -19,6 +22,12 @@
 	padding:5px;
 	clear:both;
 	overflow:auto;
+}
+.markItUpHeader ul:first-child {
+  padding:2px;
+  margin-bottom:2px;
+  border-radius:2px;
+	background:url('images/bg-header.png') repeat-x;
 }
 .markItUpFooter {
 	display:none;
@@ -29,12 +38,13 @@
 	list-style:none;
 	float:left;
 	position:relative;
+  margin:0;
 }
 .markItUpHeader ul li:hover > ul{
 	display:block;
 }
 .markItUpHeader ul .markItUpDropMenu {
-	background:transparent url(images/menu.png) no-repeat 120% 50%;
+	background:transparent url(images/menu.png) no-repeat 120% 100%;
 	margin-right:5px;
 }
 /* next rows of buttons */

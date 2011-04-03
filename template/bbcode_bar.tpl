@@ -65,5 +65,3 @@ jQuery(document).ready(function() {ldelim}
 	jQuery('#{$form_name} textarea').markItUp(BBCodeBar);
 });
 {/footer_script}
-
-{$BBC_smilies}

@@ -23,6 +23,10 @@ function set_bbcode_bar()
 	// }
 	$template->assign('form_name', 'addComment');
 
+	if (isset($pwg_loaded_plugins['SmiliesSupport'])) {
+		$template->assign('BBC_smilies', true);
+	}
+
 	$template->assign('BBCODE_PATH', BBcode_PATH);
 	$template->set_filename('bbcode_bar', dirname(__FILE__).'/template/bbcode_bar.tpl');
 	$template->parse('bbcode_bar', true);		
