@@ -49,7 +49,7 @@ if (script_basename() == 'admin')
 		global $page, $template, $pwg_loaded_plugins;
 		
 		if (
-			($_GET['page'] == 'plugins_list' OR $_GET['section'] == 'bbcode_bar/admin.php')
+			((isset($_GET['page']) AND $_GET['page'] == 'plugins_list') OR (isset($_GET['section']) AND $_GET['section'] == 'bbcode_bar/admin.php'))
 			AND isset($pwg_loaded_plugins['SmiliesSupport']) 
 			AND version_compare($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') == -1
 		) {
