@@ -3,7 +3,7 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 function plugin_install()
 {  
-	global $conf, $default;
+	global $conf;
 	
 	$BBcode_default = array(
 		'b' => true,

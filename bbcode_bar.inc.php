@@ -3,7 +3,7 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
  
 function set_bbcode_bar()
 {
-	global $template, $conf, $lang, $user, $pwg_loaded_plugins, $page;
+	global $template, $conf, $pwg_loaded_plugins, $page;
 	load_language('plugin.lang', dirname(__FILE__) . '/');
 	$conf_bbcode_bar = unserialize($conf['bbcode_bar']);
 
@@ -27,10 +27,9 @@ function set_bbcode_bar()
 	$template->set_filename('bbcode_bar', dirname(__FILE__).'/template/bbcode_bar.tpl');
 	$template->parse('bbcode_bar', true);		
 
-	// smilies support ## must be parsed avec bbcode_bar, because the javascript must be after bbc's one
-	if (isset($pwg_loaded_plugins['SmiliesSupport']))
-	{
-		set_smiliessupport();
+	// smilies support >2.2.a ## must be parsed after bbcode_bar, because the javascript must be after bbc's one
+	if (isset($pwg_loaded_plugins['SmiliesSupport']) AND version_compare($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') != -1) {
+			set_smiliessupport();
 	}	
 }
 

@@ -42,7 +42,22 @@ if (script_basename() == 'admin')
 		));
 		return $menu;
 	}
+	
+	// version 2.2.a or greater of SmiliesSupport is required
+	add_event_handler('loc_end_admin', 'bbcode_bar_check_smilies');
+	function bbcode_bar_check_smilies() {
+		global $page, $template, $pwg_loaded_plugins;
+		
+		if (
+			($_GET['page'] == 'plugins_list' OR $_GET['section'] == 'bbcode_bar/admin.php')
+			AND isset($pwg_loaded_plugins['SmiliesSupport']) 
+			AND version_compare($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') == -1
+		) {
+			$page['warnings'][] = "BBCode Bar : SmiliesSupport has been detected, but is not up to date. Version 2.2.a or greater is required. Please update.";
+			$template->assign('warnings', $page['warnings']);
+		}
+	}
+	
 }
-
 
 ?>
