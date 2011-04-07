@@ -9,8 +9,8 @@
 	$lang['center_help'] 	= "Centrato : [center]centrato[/center]";
 	$lang['right_help'] 	= "Destra : [right]destra[/right]";
 	$lang['ul_help'] 		= "Elenco : [ul][li]elemento[/li][/ul]";
-	$lang['ol_help'] 		= "Elenco Numerica : [ol][li]elemento[/li][/ol]";
-	$lang['li_help'] 		= "List element : [li]element[/li]";
+	$lang['ol_help'] 		= "Elenco Numerico : [ol][li]elemento[/li][/ol]";
+	$lang['li_help'] 		= "Elementi di lista : [li]element[/li]";
 	
 	$lang['quote_help'] 	= "Citazione : [quote]citazione[/quote]";
 	$lang['img_help'] 		= "Immagine : [img]immagine[/img]";
@@ -24,7 +24,7 @@
 	$lang['large'] 			= "Grande";
 	$lang['huge'] 			= "Grandissimo";	
 	
-	$lang['color_help'] 		= "Colore del testo  : [color=couleur]testo[/color]";	
+	$lang['color_help'] 	= "Colore del testo  : [color=couleur]testo[/color]";	
 	$lang['red_help'] 		= "Rosso";			
 	$lang['orange_help'] 	= "Arancione";	 	
 	$lang['yellow_help'] 	= "Giallo";	 	
@@ -32,7 +32,7 @@
 	$lang['blue_help'] 		= "Blu";	
 	$lang['purple_help'] 	= "Viola";
 	$lang['white_help'] 	= "Bianco";
-	$lang['grey_help'] 		= "Grey";
+	$lang['grey_help'] 		= "Grigio";
 	$lang['black_help'] 	= "Nero";
 
 ?>
