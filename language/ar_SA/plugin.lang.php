@@ -1,38 +1,38 @@
 <?php
-		
-	$lang['p_help'] 		= "Paragraph : [p]Paragraph[/p]";	
-	$lang['b_help'] 		= "Bold : [b]bold[/b]";
-	$lang['i_help'] 		= "Italic : [i]italic[/i]";
-	$lang['u_help'] 		= "Underline : [u]underline[/u]";	
-	$lang['s_help'] 		= "Striped  : [s]striped[/s]";
 	
-	$lang['center_help'] 	= "Center : [center]center[/center]";
-	$lang['right_help'] 	= "Right : [right]right[/right]";
-	$lang['ul_help'] 		= "Unordered list : [ul][li]element[/li][/ul]";
-	$lang['ol_help'] 		= "Ordered list : [ol][li]element[/li][/ol]";
-	$lang['li_help'] 		= "List element : [li]element[/li]";
-	
-	$lang['quote_help'] 	= "Quote : [quote]quote[/quote]";
-	$lang['img_help'] 		= "Picture : [img]picture[/img]";
-	$lang['url_help'] 		= "URL : [url=URL]Title[/url]";
-	$lang['mail_help'] 		= "E-mail : [email]Email[/email]";	
-	
-	$lang['size_help'] 		= "Font size : [size=X]text[/size]";
-	$lang['tiny'] 			= "Tiny";
-	$lang['small'] 			= "Small";
-	$lang['normal'] 		= "Normal";
-	$lang['large'] 			= "Large";
-	$lang['huge'] 			= "Huge";	
-	
-	$lang['color_help'] 	= "Font color : [color=color]text[/color]";
-	$lang['red_help'] 		= "Red";			
-	$lang['orange_help'] 	= "Orange";	 	
-	$lang['yellow_help'] 	= "Yellow";	 	
-	$lang['green_help'] 	= "Green"; 	
-	$lang['blue_help'] 		= "Blue";	
-	$lang['purple_help'] 	= "Purple";
-	$lang['white_help'] 	= "White";
-	$lang['grey_help'] 		= "Grey";
-	$lang['black_help'] 	= "Black";
-
+$lang['p_help']         = "فقرة: [p]فقرة[/p]";
+$lang['b_help']         = "واضح: [b]واضح[/b]";
+$lang['i_help']         = "ايتاليك: [i]ايتاليك[/i]";
+$lang['u_help']         = "تحته خط: [u]تحته خط[/u]";
+$lang['s_help']         = "مزال: [s]مزال[/s]";
+ 
+$lang['center_help']     = "منتصف: [center]منتصف[/center]";
+$lang['right_help']     = "يمين : [right]يمين[/right]";
+$lang['ul_help']         = "قائمة غير مرتبة : [ul][li]العنصؤ[/li][/ul]";
+$lang['ol_help']         = "قائمة مرتبة : [ol][li]العنصر[/li][/ol]";
+$lang['li_help']         = "عنصر القائمة : [li]العنصر[/li]";
+ 
+$lang['quote_help']     = "الاقتباس : [quote]الاقتباس[/quote]";
+$lang['img_help']         = "الصورة : [url]الصورة[/url]";
+$lang['url_help']         = "الرابط : [url=URL]العنوان[/url]";
+$lang['mail_help']         = "البريد : [email]البريد[/email]";
+ 
+$lang['size_help']         = "حجم الخط : [size=X]النص[/size]";
+$lang['tiny']             = "صغير جدا";
+$lang['small']             = "صغير";
+$lang['normal']         = "عادي";
+$lang['large']             = "كبير";
+$lang['huge']             = "كبير جدا";
+ 
+$lang['color_help']     = "لون الخط : [color=color]النص[/color]";
+$lang['red_help']         = "احمر";
+$lang['orange_help']     = "برتقالي";
+$lang['yellow_help']     = "اصفر";
+$lang['green_help']     = "اخضر";
+$lang['blue_help']         = "ازرق";
+$lang['purple_help']     = "زهري";
+$lang['white_help']     = "ابيض";
+$lang['grey_help']         = "رمادي";
+$lang['black_help']     = "اسود";
+  
 ?>
