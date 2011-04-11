@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name: BBCode Bar
-Version: 2.2.a
+Version: 2.2.c
 Description: Allow use BBCode for comments and descriptions.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=140
 Author: Atadilo & P@t & Mistic
@@ -47,11 +47,11 @@ if (script_basename() == 'admin')
 	add_event_handler('loc_end_admin', 'bbcode_bar_check_smilies');
 	function bbcode_bar_check_smilies() {
 		global $page, $template, $pwg_loaded_plugins;
-		
+
 		if (
 			((isset($_GET['page']) AND $_GET['page'] == 'plugins_list') OR (isset($_GET['section']) AND $_GET['section'] == 'bbcode_bar/admin.php'))
 			AND isset($pwg_loaded_plugins['SmiliesSupport']) 
-			AND version_compare($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') == -1
+			AND strcmp($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') == -1
 		) {
 			$page['warnings'][] = "BBCode Bar : SmiliesSupport has been detected, but is not up to date. Version 2.2.a or greater is required. Please update.";
 			$template->assign('warnings', $page['warnings']);
