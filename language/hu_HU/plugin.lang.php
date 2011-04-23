@@ -10,7 +10,7 @@
 	$lang['right_help'] 	= "Jobbra : [right]illesztés jobbra[/right]";
 	$lang['ul_help'] 		= "Számozatlan lista : [ul][li]elem[/li][/ul]";
 	$lang['ol_help'] 		= "Számozott lista : [ol][li]elem[/li][/ol]";
-	$lang['li_help'] 		= "List element : [li]element[/li]";
+	$lang['li_help'] 		= "Lista elem : [li]elem[/li]";
 	
 	$lang['quote_help'] 	= "Idézet : [quote]idézett szöveg[/quote]";
 	$lang['img_help'] 		= "Kép : [img]kép fájlnév[/img]";
@@ -32,7 +32,7 @@
 	$lang['blue_help'] 		= "Kék";	
 	$lang['purple_help'] 	= "Ibolya";
 	$lang['white_help'] 	= "Fehér";
-	$lang['grey_help'] 		= "Grey";
+	$lang['grey_help'] 		= "Szürke";
 	$lang['black_help'] 	= "Fekete";
   
 ?>
