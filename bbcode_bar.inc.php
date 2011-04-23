@@ -32,7 +32,7 @@ function set_bbcode_bar()
 	$template->parse('bbcode_bar', true);		
 
 	// smilies support >2.2.a ## must be parsed after bbcode_bar, because the javascript must be after bbc's one
-	if (isset($pwg_loaded_plugins['SmiliesSupport']) AND version_compare($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') != -1) {
+	if (isset($pwg_loaded_plugins['SmiliesSupport']) AND strcmp($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') != -1) {
 			set_smiliessupport();
 	}	
 }
