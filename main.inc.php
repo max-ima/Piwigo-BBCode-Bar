@@ -23,10 +23,12 @@ function init_bbcode_bar()
   add_event_handler('loc_after_page_header', 'add_bbcode_bar');
 }
 
-function add_bbcode_bar() {
+function add_bbcode_bar() 
+{
   global $page;
   
-  if (isset($page['body_id']) AND $page['body_id'] == 'thePicturePage') {
+  if (isset($page['body_id']) AND $page['body_id'] == 'thePicturePage') 
+  {
     set_bbcode_bar();
   }
 }
@@ -45,15 +47,15 @@ if (script_basename() == 'admin')
   
   // version 2.2.a or greater of SmiliesSupport is required
   add_event_handler('loc_end_admin', 'bbcode_bar_check_smilies');
-  function bbcode_bar_check_smilies() {
+  function bbcode_bar_check_smilies() 
+  {
     global $page, $template, $pwg_loaded_plugins;
 
     if (
-      ((isset($_GET['page']) AND $_GET['page'] == 'plugins_list') OR (isset($_GET['section']) AND $_GET['section'] == 'bbcode_bar/admin.php'))
-      AND isset($pwg_loaded_plugins['SmiliesSupport']) 
-      AND strcmp($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') == -1
+      ( (isset($_GET['page']) AND $_GET['page'] == 'plugins_list') OR (isset($_GET['section']) AND $_GET['section'] == 'bbcode_bar/admin.php') )
+      AND isset($pwg_loaded_plugins['SmiliesSupport']) AND strcmp($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.f') == -1
     ) {
-      $page['warnings'][] = "BBCode Bar : SmiliesSupport has been detected, but is not up to date. Version 2.2.a or greater is required. Please update.";
+      array_push($page['warnings'], "BBCode Bar : SmiliesSupport has been detected, but is not up to date. Version 2.2.a or greater is required. Please update.");
       $template->assign('warnings', $page['warnings']);
     }
   }

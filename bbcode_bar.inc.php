@@ -4,11 +4,13 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 function set_bbcode_bar()
 {
   global $template, $conf, $pwg_loaded_plugins, $page;
+  
   load_language('plugin.lang', dirname(__FILE__) . '/');
   $conf_bbcode_bar = unserialize($conf['bbcode_bar']);
 
   // buttons
-  foreach(unserialize(BBcode_codes) as $key) {
+  foreach(unserialize(BBcode_codes) as $key) 
+  {
     if ($conf_bbcode_bar[$key]) $template->assign('BBC_'.$key, true);
   }
   
@@ -17,24 +19,32 @@ function set_bbcode_bar()
     // (isset($_GET['action']) AND $_GET['action'] == 'edit_comment') 
     // OR (isset($page['body_id']) AND $page['body_id'] == 'theCommentsPage')
   // ) {
-    // $template->assign('form_name', 'editComment');
+    // $template->assign('bbcode_texarea', 'contenteditid');
   // } else {
-    // $template->assign('form_name', 'addComment');
+    // $template->assign('bbcode_texarea', 'contentid');
   // }
-  $template->assign('form_name', 'addComment');
+  $template->assign('bbcode_texarea', 'contentid');
 
-  if (isset($pwg_loaded_plugins['SmiliesSupport'])) {
+  // smilies
+  if (isset($pwg_loaded_plugins['SmiliesSupport'])) 
+  {
     $template->assign('BBC_smilies', true);
   }
 
   $template->assign('BBCODE_PATH', BBcode_PATH);
-  $template->set_filename('bbcode_bar', dirname(__FILE__).'/template/bbcode_bar.tpl');
-  $template->parse('bbcode_bar', true);    
+  $template->set_prefilter('picture', 'set_bbcode_bar_prefilter');    
 
-  // smilies support >2.2.a ## must be parsed after bbcode_bar, because the javascript must be after bbc's one
-  if (isset($pwg_loaded_plugins['SmiliesSupport']) AND strcmp($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.a') != -1) {
+  // smilies support > 2.2.f ## must be parsed after bbcode_bar, because the javascript must be after bbc's one
+  if (isset($pwg_loaded_plugins['SmiliesSupport']) AND strcmp($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.f') != -1) {
     set_smiliessupport();
   }  
+}
+
+function set_bbcode_bar_prefilter($content, &$smarty)
+{
+  $search = "<label>{'Comment'|@translate}";
+  $replace = file_get_contents(BBcode_PATH.'/template/bbcode_bar.tpl').$search;
+  return str_replace($search, $replace, $content);
 }
 
 

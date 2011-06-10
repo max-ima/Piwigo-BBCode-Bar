@@ -62,6 +62,6 @@ BBCodeBar = {ldelim}
 };
 
 jQuery(document).ready(function() {ldelim}
-  jQuery('#{$form_name} textarea').markItUp(BBCodeBar);
+  jQuery('#{$bbcode_texarea}').markItUp(BBCodeBar);
 });
 {/footer_script}

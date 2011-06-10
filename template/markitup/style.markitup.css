@@ -1,194 +1,195 @@
 /* common */
 .markItUp {
-	display:inline-block;
+  display:inline-block;
 }
 .markItUp * {
-	margin:0px; padding:0px;
-	outline:none;
+  margin:0px; padding:0px;
+  outline:none;
 }
 .markItUp a:link,
 .markItUp a:visited {
-	color:#000;
-	text-decoration:none;
+  color:#000;
+  text-decoration:none;
 }
 .markItUp textarea {
-	display:block;
+  display:block;
 }
 .markItUpContainer  {
-	font:11px Verdana, Arial, Helvetica, sans-serif;
+  font:11px Verdana, Arial, Helvetica, sans-serif;
 }
 .markItUpEditor {
-	font:12px 'Courier New', Courier, monospace;
-	padding:5px;
-	clear:both;
-	overflow:auto;
+  font:12px 'Courier New', Courier, monospace;
+  padding:5px;
+  clear:both;
+  overflow:auto;
 }
 .markItUpHeader ul:first-child {
-  padding:2px;
+  padding:2px 5px;
+  min-height:22px;
   margin-bottom:2px;
   border-radius:2px;
-	background:url('images/bg-header.png') repeat-x;
+  background:url('images/bg-header.png') repeat-x;
 }
 .markItUpFooter {
-	display:none;
+  display:none;
 }
 
 /* first row of buttons */
-.markItUpHeader ul li	{
-	list-style:none;
-	float:left;
-	position:relative;
-  margin:0;
+.markItUpHeader ul li  {
+  list-style:none;
+  float:left;
+  position:relative;
+  margin:0 !important;
 }
 .markItUpHeader ul li:hover > ul{
-	display:block;
+  display:block;
 }
 .markItUpHeader ul .markItUpDropMenu {
-	background:transparent url(images/menu.png) no-repeat 120% 100%;
-	margin-right:5px;
+  background:transparent url(images/menu.png) no-repeat 120% 100%;
+  margin-right:5px;
 }
 /* next rows of buttons */
 .markItUpHeader ul ul {
-	display:none;
-	position:absolute;
-	top:22px; left:0px;	
-	background:#FFF;
-	border:1px solid #444;
-	border-radius:5px;
+  display:none;
+  position:absolute;
+  top:22px; left:0px;  
+  background:#FFF;
+  border:1px solid #444;
+  border-radius:5px;
 }
 .markItUpHeader ul ul li {
-	float:none;
-	margin:0px;
+  float:none;
+  margin:0px;
 }
 .markItUpHeader ul .markItUpSize li {
-	border-bottom:1px solid #444;
-	border-radius:2px;
+  border-bottom:1px solid #444;
+  border-radius:2px;
 }
 .markItUpHeader ul .markItUpSeparator {
-	margin:2px 10px;
-	width:1px;
-	height:16px;
-	overflow:hidden;
-	background-color:#CCC;
-	color:#ccc;
+  margin:2px 10px !important;
+  width:1px;
+  height:16px;
+  overflow:hidden;
+  background-color:#CCC;
+  color:#ccc;
 }
 /* links */
 .markItUpHeader ul a {
-	display:block;
-	width:16px; height:16px;
-	text-indent:-10000px;
-	background-position:center center;
-	background-repeat:no-repeat;
-	padding:2px;
-	border:1px solid transparent;
+  display:block;
+  width:16px; height:16px;
+  text-indent:-10000px;
+  background-position:center center;
+  background-repeat:no-repeat;
+  padding:2px;
+  border:1px solid transparent;
 }
 .markItUpHeader ul a:hover {
-	border-color:#08e;
+  border-color:#08e;
 }
 .markItUpHeader ul ul a {
-	display:block;
-	text-indent:0;
-	border:0;
+  display:block;
+  text-indent:0;
+  border:0;
 }
 .markItUpHeader ul .markItUpSize li a {
-	width:90px; 
-	padding:2px 5px 2px 25px;
-	background-position:2px 50%;
+  width:90px; 
+  padding:2px 5px 2px 25px;
+  background-position:2px 50%;
 }
 .markItUpHeader ul ul a:hover  {
 }
 .markItUpHeader ul .markItUpSize li a:hover  {
-	color:#FFF;
-	background-color:#000;
+  color:#FFF;
+  background-color:#000;
 }
 
 /* icons definitions */
 .markItUp .markItUpBold a {
-	background-image:url(images/bold.png);
+  background-image:url(images/bold.png);
 }
 .markItUp .markItUpItalic a {
-	background-image:url(images/italic.png);
+  background-image:url(images/italic.png);
 }
 .markItUp .markItUpUnderline a {
-	background-image:url(images/underline.png);
+  background-image:url(images/underline.png);
 }
 .markItUp .markItUpStroke a {
-	background-image:url(images/stroke.png);
+  background-image:url(images/stroke.png);
 }
 
 .markItUp .markItUpParagraph a {
-	background-image:url(images/p.png);
+  background-image:url(images/p.png);
 }
 .markItUp .markItUpCenter a {
-	background-image:url(images/center.png);
+  background-image:url(images/center.png);
 }
 .markItUp .markItUpRight a {
-	background-image:url(images/right.png);
+  background-image:url(images/right.png);
 }
 
 .markItUp .markItUpListUL a {
-	background-image:url(images/list-bullet.png);
+  background-image:url(images/list-bullet.png);
 }
 .markItUp .markItUpListOL a {
-	background-image:url(images/list-numeric.png);
+  background-image:url(images/list-numeric.png);
 }
 .markItUp .markItUpListLI a {
-	background-image:url(images/list-item.png);
+  background-image:url(images/list-item.png);
 }
 
-.markItUp .markItUpPicture a	{
-	background-image:url(images/picture.png);
+.markItUp .markItUpPicture a  {
+  background-image:url(images/picture.png);
 }
 .markItUp .markItUpLink a {
-	background-image:url(images/link.png);
+  background-image:url(images/link.png);
 }
 .markItUp .markItUpMail a {
-	background-image:url(images/mail.png);
+  background-image:url(images/mail.png);
 }
 .markItUp .markItUpQuote a {
-	background-image:url(images/quote.png);
+  background-image:url(images/quote.png);
 }
 
 .markItUp .markItUpSize a {
-	background-image:url(images/fonts.png);
+  background-image:url(images/fonts.png);
 }
 .markItUp .preview a {
-	background-image:url(images/preview.png);
+  background-image:url(images/preview.png);
 }
 
 /* colors */
 .markItUp .markItUpColors a {
-	background-image:url(images/colors.png);
+  background-image:url(images/colors.png);
 }
-	.markItUp .markItUpColors ul {
-		width:81px;
-		padding:1px;	
-	}
-	.markItUp .markItUpColors  li {
-		border:1px solid white;
-		width:25px;	height:25px;
-		overflow:hidden;
-		padding:0px; margin:0px;
-		float:left;
-		border-radius:2px;
-	}
-	.markItUp .markItUpColors ul a {
-		width:25px;	height:25px;
-		color:transparent;
-	}
-	.markItUp .markItUpColors li:hover {
-		background-color:none;
-		border:1px solid #08e;
-	}
-	
-	.markItUp .markItUpColors .col1-1 a { background:yellow; }
-	.markItUp .markItUpColors .col1-2 a { background:orange; }
-	.markItUp .markItUpColors .col1-3 a { background:red; }
-	
-	.markItUp .markItUpColors .col2-1 a { background:blue; }
-	.markItUp .markItUpColors .col2-2 a { background:purple; }
-	.markItUp .markItUpColors .col2-3 a { background:green; }
-	
-	.markItUp .markItUpColors .col3-1 a { background:white; }
-	.markItUp .markItUpColors .col3-2 a { background:gray; }
-	.markItUp .markItUpColors .col3-3 a { background:black; }
+  .markItUp .markItUpColors ul {
+    width:81px;
+    padding:1px;  
+  }
+  .markItUp .markItUpColors  li {
+    border:1px solid white;
+    width:25px;  height:25px;
+    overflow:hidden;
+    padding:0px; margin:0px;
+    float:left;
+    border-radius:2px;
+  }
+  .markItUp .markItUpColors ul a {
+    width:25px;  height:25px;
+    color:transparent;
+  }
+  .markItUp .markItUpColors li:hover {
+    background-color:none;
+    border:1px solid #08e;
+  }
+  
+  .markItUp .markItUpColors .col1-1 a { background:yellow; }
+  .markItUp .markItUpColors .col1-2 a { background:orange; }
+  .markItUp .markItUpColors .col1-3 a { background:red; }
+  
+  .markItUp .markItUpColors .col2-1 a { background:blue; }
+  .markItUp .markItUpColors .col2-2 a { background:purple; }
+  .markItUp .markItUpColors .col2-3 a { background:green; }
+  
+  .markItUp .markItUpColors .col3-1 a { background:white; }
+  .markItUp .markItUpColors .col3-2 a { background:gray; }
+  .markItUp .markItUpColors .col3-3 a { background:black; }
