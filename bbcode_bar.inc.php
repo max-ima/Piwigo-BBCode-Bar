@@ -35,7 +35,8 @@ function set_bbcode_bar()
   $template->set_prefilter('picture', 'set_bbcode_bar_prefilter');    
 
   // smilies support > 2.2.f ## must be parsed after bbcode_bar, because the javascript must be after bbc's one
-  if (isset($pwg_loaded_plugins['SmiliesSupport']) AND strcmp($pwg_loaded_plugins['SmiliesSupport']['version'], '2.2.f') != -1) {
+  if (isset($pwg_loaded_plugins['SmiliesSupport'])) 
+  {
     set_smiliessupport();
   }  
 }
@@ -188,7 +189,7 @@ function BBCodeParse($str)
   if ($conf_bbcode_bar['img'])
   {
     //Images
-    $patterns[] = "#\[img\](.*?)\[/img\]#si";
+    $patterns[] = "#\[img\](.*?)\[/img\]#is";
     $replacements[] = '<img src="\\1" />';
   }
   if ($conf_bbcode_bar['url'])
@@ -226,13 +227,13 @@ function BBCodeParse($str)
   if ($conf_bbcode_bar['size'])
   {
     //Size
-    $patterns[] = "#\[size=([1-2]?[0-9])\](.*?)\[/size\]#si";
+    $patterns[] = "#\[size=([1-2]?[0-9])\](.*?)\[/size\]#is";
     $replacements[] = '<span style="font-size: \\1px; line-height: normal">\\2</span>';
   }
   if ($conf_bbcode_bar['color'])
   {
     //Colours
-    $patterns[] = "#\[color=(\#[0-9A-F]{6}|[a-z]+)\](.*?)\[/color\]#si";
+    $patterns[] = "#\[color=(\#[0-9A-F]{6}|\#[0-9A-F]{3}|[a-z]+)\](.*?)\[/color\]#is";
     $replacements[] = '<span style="color: \\1">\\2</span>';
   }
   
