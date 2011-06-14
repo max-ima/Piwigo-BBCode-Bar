@@ -14,7 +14,7 @@ $lang['li_help'] = "Element listy : [li]element[/li]";
 
 $lang['quote_help'] = "Cytat : [quote]cytat[/quote]";
 $lang['img_help'] = "Obrazek : [img]obrazek[/img]";
-$lang['url_help'] = "URL : [url=URL]Title[/url]";
+$lang['url_help'] = 'URL : [url=URL]Tytuł[/url]';
 $lang['mail_help'] = "E-mail : [email]Email[/email]";
 
 $lang['size_help'] = "Rozmiar czcionki : [size=X]tekst[/size]";
