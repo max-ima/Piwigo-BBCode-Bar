@@ -1,38 +1,38 @@
 <?php
 
-$lang['p_help'] = "Paragraf : [p]Paragraf[/p]";
-$lang['b_help'] = "Pogrubione : [b]pogrubione[/b]";
-$lang['i_help'] = "Pochylone : [i]pochylone[/i]";
-$lang['u_help'] = "Podkreślone : [u]podkreślone[/u]";
-$lang['s_help'] = "Przekreślone  : [s]przekreślone[/s]";
+$lang['Paragraph : [p]Paragraph[/p]'] = 'Paragraf : [p]Paragraf[/p]';
+$lang['Bold : [b]bold[/b]'] = 'Pogrubione : [b]pogrubione[/b]';
+$lang['Italic : [i]italic[/i]'] = 'Pochylone : [i]pochylone[/i]';
+$lang['Underline : [u]underline[/u]'] = 'Podkreślone : [u]podkreślone[/u]';
+$lang['Striped  : [s]striped[/s]'] = 'Przekreślone  : [s]przekreślone[/s]';
 
-$lang['center_help'] = "Wyśrodkowanie : [center]wyśrodkowanie[/center]";
-$lang['right_help'] = "Wyrównanie do prawej : [right]wyrównanie do prawej[/right]";
-$lang['ul_help'] = "Lista nieuporządkowana : [ul][li]element[/li][/ul]";
-$lang['ol_help'] = "Lista uporządkowana : [ol][li]element[/li][/ol]";
-$lang['li_help'] = "Element listy : [li]element[/li]";
+$lang['Center : [center]center[/center]'] = 'Wyśrodkowanie : [center]wyśrodkowanie[/center]';
+$lang['Right : [right]right[/right]'] = 'Wyrównanie do prawej : [right]wyrównanie do prawej[/right]';
+$lang['Unordered list : [ul][li]element[/li][/ul]'] = 'Lista nieuporządkowana : [ul][li]element[/li][/ul]';
+$lang['Ordered list : [ol][li]element[/li][/ol]'] = 'Lista uporządkowana : [ol][li]element[/li][/ol]';
+$lang['List element : [li]element[/li]'] = 'Element listy : [li]element[/li]';
 
-$lang['quote_help'] = "Cytat : [quote]cytat[/quote]";
-$lang['img_help'] = "Obrazek : [img]obrazek[/img]";
-$lang['url_help'] = 'URL : [url=URL]Tytuł[/url]';
-$lang['mail_help'] = "E-mail : [email]Email[/email]";
+$lang['Quote : [quote]quote[/quote]'] = 'Cytat : [quote]cytat[/quote]';
+$lang['Picture : [img]picture[/img]'] = 'Obrazek : [img]obrazek[/img]';
+$lang['URL : [url=URL]Title[/url]'] = 'URL : [url=URL]Tytuł[/url]';
+$lang['E-mail : [email]Email[/email]'] = 'E-mail : [email]Email[/email]';
 
-$lang['size_help'] = "Rozmiar czcionki : [size=X]tekst[/size]";
-$lang['tiny'] = "Malutka";
-$lang['small'] = "Mała";
-$lang['normal'] = "Normalna";
-$lang['large'] = "Duża";
-$lang['huge'] = "Ogromna";
+$lang['Font size : [size=X]text[/size]'] = 'Rozmiar czcionki : [size=X]tekst[/size]';
+$lang['tiny'] = 'Malutka';
+$lang['small'] = 'Mała';
+$lang['normal'] = 'Normalna';
+$lang['large'] = 'Duża';
+$lang['huge'] = 'Ogromna';
 
-$lang['color_help'] = "Kolor czcionki : [color=color]tekst[/color]";
-$lang['red_help'] = "Czerwony";
-$lang['orange_help'] = "Pomarańczowy";
-$lang['yellow_help'] = "Żółty";
-$lang['green_help'] = "Zielony";
-$lang['blue_help'] = "Niebieski";
-$lang['purple_help'] = "Fioletowy";
-$lang['white_help'] = "Biały";
-$lang['grey_help'] = "Szary";
-$lang['black_help'] = "Czarny";
+$lang['Font color : [color=color]text[/color]'] = 'Kolor czcionki : [color=color]tekst[/color]';
+$lang['Red'] = 'Czerwony';
+$lang['Orange'] = 'Pomarańczowy';
+$lang['Yellow'] = 'Żółty';
+$lang['Green'] = 'Zielony';
+$lang['Blue'] = 'Niebieski';
+$lang['Purple'] = 'Fioletowy';
+$lang['White'] = 'Biały';
+$lang['Grey'] = 'Szary';
+$lang['Black'] = 'Czarny';
   
 ?>

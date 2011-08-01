@@ -1,38 +1,36 @@
 <?php
 
-$lang['p_help']         = "Paragrāfs : [p]Paragraph[/p]";
-$lang['b_help']         = "Boldēts : [b]bold[/b]";
-$lang['i_help']         = "Sīpraksts : [i]italic[/i]";
-$lang['u_help']         = "Pasvītrots : [u]underline[/u]";
-$lang['s_help']         = "Svītrains : [s]striped [/s]";
+$lang['Paragraph : [p]Paragraph[/p]']         = 'Paragrāfs : [p]Paragraph[/p]';
+$lang['Bold : [b]bold[/b]']         = 'Boldēts : [b]bold[/b]';
+$lang['Italic : [i]italic[/i]']         = 'Sīpraksts : [i]italic[/i]';
+$lang['Underline : [u]underline[/u]']         = 'Pasvītrots : [u]underline[/u]';
+$lang['Striped  : [s]striped[/s]']         = 'Svītrains : [s]striped [/s]';
 
-$lang['center_help']     = "Centrēts : [center]center[/center]";
-$lang['right_help']     = "Līdzināts pa labi : [right]right[/right]";
-$lang['ul_help']         = "Nesakārtots saraksts : [ul][li]element[/li][/ul]";
-$lang['ol_help']         = "Sakārtots Saraksts : [ol][li]element[/li][/ol]";
-$lang['li_help'] = "List element : [li]element[/li]";
+$lang['Center : [center]center[/center]']     = 'Centrēts : [center]center[/center]';
+$lang['Right : [right]right[/right]']     = 'Līdzināts pa labi : [right]right[/right]';
+$lang['Unordered list : [ul][li]element[/li][/ul]']         = 'Nesakārtots saraksts : [ul][li]element[/li][/ul]';
+$lang['Ordered list : [ol][li]element[/li][/ol]']         = 'Sakārtots Saraksts : [ol][li]element[/li][/ol]';
 
-$lang['quote_help']     = "Pēdiņas : [quote]quote[/quote]";
-$lang['img_help']         = "Att : [img]img[/img]";
-$lang['url_help']         = "URL : [url=URL]Title[/url]";
-$lang['mail_help']         = "E-pasts : [email]Email[/email]";
+$lang['Quote : [quote]quote[/quote]']     = 'Pēdiņas : [quote]quote[/quote]';
+$lang['Picture : [img]picture[/img]']         = 'Att : [img]img[/img]';
+$lang['URL : [url=URL]Title[/url]']         = 'URL : [url=URL]Title[/url]';
+$lang['E-mail : [email]Email[/email]']         = 'E-pasts : [email]Email[/email]';
 
-$lang['size_help']         = "Fonta lielums : [size=X]text[/size]";
-$lang['tiny']         = "Sīks";
-$lang['small']         = "Mazs";
-$lang['normal']     = "Normāls";
-$lang['large']         = "Liels";
-$lang['huge']         = "Milzīgs";
+$lang['Font size : [size=X]text[/size]']         = 'Fonta lielums : [size=X]text[/size]';
+$lang['tiny']         = 'Sīks';
+$lang['small']         = 'Mazs';
+$lang['normal']     = 'Normāls';
+$lang['large']         = 'Liels';
+$lang['huge']         = 'Milzīgs';
 
-$lang['color_help']     = "Fonta krāsa : [color=color]text[/color]";
-$lang['red_help']         = "Sarkana";
-$lang['orange_help']     = "Oranža";
-$lang['yellow_help']     = "Dzeltena";
-$lang['green_help']     = "Zaļa";
-$lang['blue_help']         = "Zila";
-$lang['purple_help']     = "Violēta";
-$lang['white_help']     = "Balta";
-$lang['grey_help'] = "Grey";
-$lang['black_help']     = "Melna";
+$lang['Font color : [color=color]text[/color]']     = 'Fonta krāsa : [color=color]text[/color]';
+$lang['Red']         = 'Sarkana';
+$lang['Orange']     = 'Oranža';
+$lang['Yellow']     = 'Dzeltena';
+$lang['Green']     = 'Zaļa';
+$lang['Blue']         = 'Zila';
+$lang['Purple']     = 'Violēta';
+$lang['White']     = 'Balta';
+$lang['Black']     = 'Melna';
 
 ?>

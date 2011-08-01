@@ -1,38 +1,36 @@
 <?php
    
-$lang['p_help'] = "Písmo : [p]Písmo[/p]";   
-$lang['b_help'] = "Tučné : tučné";
-$lang['i_help'] = "Kurzíva : kurzíva";
-$lang['u_help'] = "Podčiarknutie : podčiarknutie";   
-$lang['s_help'] = "Prečiarknuté : [s]prečiarknuté [/s]";
+$lang['Paragraph : [p]Paragraph[/p]'] = 'Písmo : [p]Písmo[/p]';   
+$lang['Bold : [b]bold[/b]'] = 'Tučné : tučné';
+$lang['Italic : [i]italic[/i]'] = 'Kurzíva : kurzíva';
+$lang['Underline : [u]underline[/u]'] = 'Podčiarknutie : podčiarknutie';   
+$lang['Striped  : [s]striped[/s]'] = 'Prečiarknuté : [s]prečiarknuté [/s]';
    
-$lang['center_help'] = "Centrovať : [center]centrovať[/center]";
-$lang['right_help'] = "Vpravo : [right]vpravo[/right]";
-$lang['ul_help'] = "Nezoradený zoznam : [ul][li]element[/li][/ul]";
-$lang['ol_help'] = "Zoradený zoznam : [ol][li]element[/li][/ol]";
-$lang['li_help'] = "List element : [li]element[/li]";
+$lang['Center : [center]center[/center]'] = 'Centrovať : [center]centrovať[/center]';
+$lang['Right : [right]right[/right]'] = 'Vpravo : [right]vpravo[/right]';
+$lang['Unordered list : [ul][li]element[/li][/ul]'] = 'Nezoradený zoznam : [ul][li]element[/li][/ul]';
+$lang['Ordered list : [ol][li]element[/li][/ol]'] = 'Zoradený zoznam : [ol][li]element[/li][/ol]';
 
-$lang['quote_help'] = "Citácia : [quote]Citácia[/quote]";
-$lang['img_help'] = "Img : [img]img[/img]";
-$lang['url_help'] = "URL : [url=Page URL]Názov[/url]";
-$lang['mail_help'] = "E-mail : [email]Email[/email]";
+$lang['Quote : [quote]quote[/quote]'] = 'Citácia : [quote]Citácia[/quote]';
+$lang['Picture : [img]picture[/img]'] = 'Img : [img]img[/img]';
+$lang['URL : [url=URL]Title[/url]'] = 'URL : [url=Page URL]Názov[/url]';
+$lang['E-mail : [email]Email[/email]'] = 'E-mail : [email]Email[/email]';
 
-$lang['size_help'] = "Veľkosť písma : [size=X]text[/size]";
-$lang['tiny'] = "Najmenšie";
-$lang['small'] = "Malé";
-$lang['normal'] = "Normálne";
-$lang['large'] = "Väčšie";
-$lang['huge'] = "Najväčšie";    
+$lang['Font size : [size=X]text[/size]'] = 'Veľkosť písma : [size=X]text[/size]';
+$lang['tiny'] = 'Najmenšie';
+$lang['small'] = 'Malé';
+$lang['normal'] = 'Normálne';
+$lang['large'] = 'Väčšie';
+$lang['huge'] = 'Najväčšie';    
 
-$lang['color_help'] = "Farba písma : [color=couleur]text[/color]";   
-$lang['red_help']         = "Červená";           
-$lang['orange_help']     = "Oranžová";         
-$lang['yellow_help']     = "Žltá";         
-$lang['green_help']      = "Zelená";     
-$lang['blue_help']         = "Modrá";   
-$lang['purple_help']      = "Fialová";
-$lang['white_help']      = "Biela";
-$lang['grey_help'] = "Grey";
-$lang['black_help']       = "Čierna";
+$lang['Font color : [color=color]text[/color]'] = 'Farba písma : [color=couleur]text[/color]';   
+$lang['Red']         = 'Červená';           
+$lang['Orange']     = 'Oranžová';         
+$lang['Yellow']     = 'Žltá';         
+$lang['Green']      = 'Zelená';     
+$lang['Blue']         = 'Modrá';   
+$lang['Purple']      = 'Fialová';
+$lang['White']      = 'Biela';
+$lang['Black']       = 'Čierna';
 
 ?>

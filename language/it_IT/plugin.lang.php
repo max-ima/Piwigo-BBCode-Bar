@@ -1,38 +1,38 @@
 <?php
 
-$lang['p_help'] = "Paragrafo : [p]paragrafo[/p]";
-$lang['b_help'] = "Grassetto : [b]grassetto[/b]";
-$lang['i_help'] = "Corsivo : [i]Corsivo[/i]";
-$lang['u_help'] = "Sottolineato : [u]sottolineato[/u]";
-$lang['s_help'] = "Barrato : [s]Barrato[/s]";
+$lang['Paragraph : [p]Paragraph[/p]'] = 'Paragrafo : [p]paragrafo[/p]';
+$lang['Bold : [b]bold[/b]'] = 'Grassetto : [b]grassetto[/b]';
+$lang['Italic : [i]italic[/i]'] = 'Corsivo : [i]Corsivo[/i]';
+$lang['Underline : [u]underline[/u]'] = 'Sottolineato : [u]sottolineato[/u]';
+$lang['Striped  : [s]striped[/s]'] = 'Barrato : [s]Barrato[/s]';
 
-$lang['center_help'] = "Centrato : [center]centrato[/center]";
-$lang['right_help'] = "Destra : [right]destra[/right]";
-$lang['ul_help'] = "Elenco : [ul][li]elemento[/li][/ul]";
-$lang['ol_help'] = "Elenco Numerico : [ol][li]elemento[/li][/ol]";
-$lang['li_help'] = "Elementi di lista : [li]element[/li]";
+$lang['Center : [center]center[/center]'] = 'Centrato : [center]centrato[/center]';
+$lang['Right : [right]right[/right]'] = 'Destra : [right]destra[/right]';
+$lang['Unordered list : [ul][li]element[/li][/ul]'] = 'Elenco : [ul][li]elemento[/li][/ul]';
+$lang['Ordered list : [ol][li]element[/li][/ol]'] = 'Elenco Numerico : [ol][li]elemento[/li][/ol]';
+$lang['List element : [li]element[/li]'] = 'Elementi di lista : [li]element[/li]';
 
-$lang['quote_help'] = "Citazione : [quote]citazione[/quote]";
-$lang['img_help'] = "Immagine : [img]immagine[/img]";
-$lang['url_help'] = "URL : [url=Page URL]Nome della pagina[/url]";
-$lang['mail_help'] = "E-mail : [email]Email[/email]";
+$lang['Quote : [quote]quote[/quote]'] = 'Citazione : [quote]citazione[/quote]';
+$lang['Picture : [img]picture[/img]'] = 'Immagine : [img]immagine[/img]';
+$lang['URL : [url=URL]Title[/url]'] = 'URL : [url=Page URL]Nome della pagina[/url]';
+$lang['E-mail : [email]Email[/email]'] = 'E-mail : [email]Email[/email]';
 
-$lang['size_help'] = "Dimensione testo : [size=X]testo[/size]";
-$lang['tiny'] = "Piccolissimo";
-$lang['small'] = "Piccolo";
-$lang['normal'] = "Normale";
-$lang['large'] = "Grande";
-$lang['huge'] = "Grandissimo";
+$lang['Font size : [size=X]text[/size]'] = 'Dimensione testo : [size=X]testo[/size]';
+$lang['tiny'] = 'Piccolissimo';
+$lang['small'] = 'Piccolo';
+$lang['normal'] = 'Normale';
+$lang['large'] = 'Grande';
+$lang['huge'] = 'Grandissimo';
 
-$lang['color_help'] = "Colore del testo  : [color=couleur]testo[/color]";
-$lang['red_help'] = "Rosso";
-$lang['orange_help'] = "Arancione"; 
-$lang['yellow_help'] = "Giallo"; 
-$lang['green_help'] = "Verde"; 
-$lang['blue_help'] = "Blu";
-$lang['purple_help'] = "Viola";
-$lang['white_help'] = "Bianco";
-$lang['grey_help'] = "Grigio";
-$lang['black_help'] = "Nero";
+$lang['Font color : [color=color]text[/color]'] = 'Colore del testo  : [color=couleur]testo[/color]';
+$lang['Red'] = 'Rosso';
+$lang['Orange'] = 'Arancione'; 
+$lang['Yellow'] = 'Giallo'; 
+$lang['Green'] = 'Verde'; 
+$lang['Blue'] = 'Blu';
+$lang['Purple'] = 'Viola';
+$lang['White'] = 'Bianco';
+$lang['Grey'] = 'Grigio';
+$lang['Black'] = 'Nero';
 
 ?>
