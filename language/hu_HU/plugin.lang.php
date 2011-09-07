@@ -31,7 +31,8 @@ $lang['Green'] = 'Zöld';
 $lang['Blue'] = 'Kék';
 $lang['Purple'] = 'Ibolya';
 $lang['White'] = 'Fehér';
-$lang['Grey'] = 'Grey';
+$lang['Grey'] = 'Szürke';
 $lang['Black'] = 'Fekete';
   
+$lang['List element : [li]element[/li]'] = 'Lista : [li]elem[/li]';
 ?>
