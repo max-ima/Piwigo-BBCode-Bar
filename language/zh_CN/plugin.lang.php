@@ -1,38 +1,38 @@
 <?php
 
-$lang['p_help'] = "段落: [p]段落[/p]";
-$lang['b_help'] = "加粗 : [b]加粗[/b]";
-$lang['i_help'] = "斜体 : [i]斜体[/i]";
-$lang['u_help'] = "下划线 : [u]下划线[/u]";
-$lang['s_help'] = "横线 : [s]横线[/s]";
 
-$lang['center_help'] = "居中 : [center]居中[/center]";
-$lang['right_help'] = "居右 : [right]居右[/right]";
-$lang['ul_help'] = "无序表列 : [ul][li]元素[/li][/ul]";
-$lang['ol_help'] = "有序列表 : [ol][li]元素[/li][/ol]";
-$lang['li_help'] = "列表元素 : [li]元素[/li]";
 
-$lang['quote_help'] = "引言 : [quote]引言[/quote]";
-$lang['img_help'] = "图片 : [img]图片[/img]";
-$lang['url_help'] = "URL : [url=URL]Title[/url]";
-$lang['mail_help'] = "E-mail : [email]Email[/email]";
 
-$lang['size_help'] = "字体大小 : [size=X]文本[/size]";
 $lang['tiny'] = "极细";
 $lang['small'] = "小号";
 $lang['normal'] = "标准";
 $lang['large'] = "大号";
 $lang['huge'] = "超大";
 
-$lang['color_help'] = "字体颜色 : [color=color]文本[/color]";
-$lang['red_help'] = "红色";
-$lang['orange_help'] = "橙色";
-$lang['yellow_help'] = "黄色";
-$lang['green_help'] = "绿色";
-$lang['blue_help'] = "蓝色";
-$lang['purple_help'] = "紫色";
-$lang['white_help'] = "白色";
-$lang['grey_help'] = "灰色";
-$lang['black_help'] = "黑色";
   
+$lang['Black'] = '黑';
+$lang['Blue'] = '蓝';
+$lang['Bold : [b]bold[/b]'] = '粗体 : [b]粗体[/b]';
+$lang['Center : [center]center[/center]'] = '居中 : [center]居中[/center]';
+$lang['E-mail : [email]Email[/email]'] = 'E-mail : [email]Email[/email]';
+$lang['Font color : [color=color]text[/color]'] = '字体颜色 : [color=颜色]文字[/color]';
+$lang['Font size : [size=X]text[/size]'] = '字体大小 : [size=X]文字[/size]';
+$lang['Green'] = '绿';
+$lang['Grey'] = '灰';
+$lang['Italic : [i]italic[/i]'] = '斜体 : [i]斜体[/i]';
+$lang['List element : [li]element[/li]'] = '列表行 : [li]列表行[/li]';
+$lang['Orange'] = '橙';
+$lang['Ordered list : [ol][li]element[/li][/ol]'] = '有序列表 : [ol][li]列表行[/li][/ol]';
+$lang['Paragraph : [p]Paragraph[/p]'] = '段落: [p]段落[/p]';
+$lang['Picture : [img]picture[/img]'] = '图片 : [img]图片[/img]';
+$lang['Purple'] = '紫';
+$lang['Quote : [quote]quote[/quote]'] = '引用 : [quote]引用[/quote]';
+$lang['Red'] = '红';
+$lang['Right : [right]right[/right]'] = '居右 : [right]居右[/right]';
+$lang['Striped  : [s]striped[/s]'] = '删除线 : [s]删除线[/s]';
+$lang['Underline : [u]underline[/u]'] = '下划线 : [u]下划线[/u]';
+$lang['Unordered list : [ul][li]element[/li][/ul]'] = '无序列表 : [ul][li]列表行[/li][/ul]';
+$lang['URL : [url=URL]Title[/url]'] = 'URL : [url=URL地址]URL文字[/url]';
+$lang['White'] = '白';
+$lang['Yellow'] = '黄';
 ?>
