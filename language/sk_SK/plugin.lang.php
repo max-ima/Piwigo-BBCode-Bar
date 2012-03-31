@@ -33,4 +33,6 @@ $lang['Purple']      = 'Fialová';
 $lang['White']      = 'Biela';
 $lang['Black']       = 'Čierna';
 
+$lang['Grey'] = 'Sivé';
+$lang['List element : [li]element[/li]'] = 'Zoznam prvkov: [li]prvok[/li]';
 ?>
