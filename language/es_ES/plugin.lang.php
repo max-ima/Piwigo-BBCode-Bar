@@ -34,4 +34,5 @@ $lang['White']   = 'Blanco';
 $lang['Grey']   = 'Grey';
 $lang['Black']   = 'Negro';
 
+$lang['List element : [li]element[/li]'] = 'Elemento de la lista: [li]element[/li]';
 ?>
