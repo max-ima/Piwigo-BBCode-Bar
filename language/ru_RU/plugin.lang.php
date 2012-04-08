@@ -33,4 +33,6 @@ $lang['Purple'] = 'Фиолетовый';
 $lang['White'] = 'Белый';
 $lang['Black'] = 'Черный';
   
+$lang['Grey'] = 'Серый';
+$lang['List element : [li]element[/li]'] = 'Элемент списка: [li]элемент[/li]';
 ?>
