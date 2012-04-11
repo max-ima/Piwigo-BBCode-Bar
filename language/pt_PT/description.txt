@@ -1,0 +1,1 @@
+Permitir o uso BBCode nos coment&aacute;rios e dscri&ccedil;&otilde;es.
