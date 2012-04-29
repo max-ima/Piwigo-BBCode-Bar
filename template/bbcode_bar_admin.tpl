@@ -1,12 +1,11 @@
-{html_head}
-{literal}
+{html_head}{literal}
 <style type="text/css">
   form.properties span.property {
-    width:60%;
+    width:55%;
+    font-weight:normal;
   }
 </style>
-{/literal}
-{/html_head}
+{/literal}{/html_head}
 
 <div class="titrePage">
   <h2>BBCode Bar</h2>
@@ -14,7 +13,7 @@
 
 <form method="post" action="" class="properties" ENCTYPE="multipart/form-data"> 
   <fieldset>
-    <legend>{'Parameters'|@translate}</legend>
+    <legend>{'Available options'|@translate}</legend>
     <ul>
       <li>
         <label><span class="property">{'Bold : [b]bold[/b]'|@translate}</span>

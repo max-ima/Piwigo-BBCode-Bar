@@ -1,5 +1,7 @@
 <?php
 
+$lang['Available options'] = 'Available options';
+
 $lang['Paragraph : [p]Paragraph[/p]'] = 'Paragraph : [p]Paragraph[/p]';
 $lang['Bold : [b]bold[/b]'] = 'Bold : [b]bold[/b]';
 $lang['Italic : [i]italic[/i]'] = 'Italic : [i]italic[/i]';

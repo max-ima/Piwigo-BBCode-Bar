@@ -62,6 +62,6 @@ BBCodeBar = {ldelim}
 };
 
 jQuery(document).ready(function() {ldelim}
-  jQuery('#{$bbcode_texarea}').markItUp(BBCodeBar);
+  jQuery('#contentid').markItUp(BBCodeBar);
 });
 {/footer_script}

@@ -25,9 +25,7 @@ function plugin_install()
 
   if (!isset($conf['bbcode_bar']))
   {
-    $q = "INSERT INTO " . CONFIG_TABLE . " (param,value,comment)
-      VALUES ('bbcode_bar','" . serialize($BBcode_default) . "','Parametres BBCode Bar');";
-    pwg_query($q);
+    conf_update_param('bbcode_bar',serialize($BBcode_default));
   }
 }
 
@@ -57,21 +55,13 @@ function plugin_activate()
       'color' => $conf_bbcode_bar[14] == '1' ? true : false,
     );
     
-    $q = "UPDATE " . CONFIG_TABLE . "
-      SET value='" . serialize($new_bbcode_bar) . "'
-      WHERE param='bbcode_bar';";
-    pwg_query($q);
+    conf_update_param('bbcode_bar', serialize($new_bbcode_bar));
   }
 }
 
 function plugin_uninstall()
 {
-  global $conf;
-
-  if (isset($conf['bbcode_bar']))
-  {
-    pwg_query('DELETE FROM ' . CONFIG_TABLE . ' WHERE param="bbcode_bar";');
-  }
+  pwg_query('DELETE FROM ' . CONFIG_TABLE . ' WHERE param="bbcode_bar";');
 }
 
 ?>
