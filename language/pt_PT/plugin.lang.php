@@ -50,4 +50,5 @@ $lang['large'] = 'Grande';
 $lang['normal'] = 'Normal';
 $lang['small'] = 'Pequeno';
 $lang['tiny'] = 'Fino';
+$lang['Available options'] = 'Opções disponíveis';
 ?>
