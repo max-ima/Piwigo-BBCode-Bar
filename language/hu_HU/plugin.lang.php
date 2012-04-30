@@ -35,4 +35,5 @@ $lang['Grey'] = 'Szürke';
 $lang['Black'] = 'Fekete';
   
 $lang['List element : [li]element[/li]'] = 'Lista : [li]elem[/li]';
+$lang['Available options'] = 'Rendelkezésre álló lehetőségek';
 ?>
