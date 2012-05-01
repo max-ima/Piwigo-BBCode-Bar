@@ -50,4 +50,5 @@ $lang['Unordered list : [ul][li]element[/li][/ul]'] = 'Неупорядкова�
 $lang['URL : [url=URL]Title[/url]'] = 'Посилання: [url=URL]Назва[/url]';
 $lang['White'] = 'Білий';
 $lang['Yellow'] = 'Жовтий';
+$lang['Available options'] = 'Доступні параметри';
 ?>
