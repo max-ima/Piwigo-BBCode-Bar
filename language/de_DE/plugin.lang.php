@@ -35,4 +35,5 @@ $lang['Grey'] = 'Grau';
 $lang['Black'] = 'Schwarz';
 
 $lang['List element : [li]element[/li]'] = 'Listeneintrag : [li]Element[/li]';
+$lang['Available options'] = 'Verfügbare Optionen';
 ?>
