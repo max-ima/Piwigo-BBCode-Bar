@@ -35,4 +35,5 @@ $lang['Black'] = 'Черный';
   
 $lang['Grey'] = 'Серый';
 $lang['List element : [li]element[/li]'] = 'Элемент списка: [li]элемент[/li]';
+$lang['Available options'] = 'Доступные опции';
 ?>
