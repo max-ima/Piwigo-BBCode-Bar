@@ -26,4 +26,16 @@ $lang['Orange'] = 'Πορτοκαλί';
 $lang['Red'] = 'Κόκκινο';
 $lang['White'] = 'Λευκό';
 $lang['Yellow'] = 'Κίτρινο';
+$lang['Available options'] = 'Διαθέσιμες επιλογές';
+$lang['Black'] = 'Μαύρο';
+$lang['E-mail : [email]Email']['/email'] = 'E-mail : [email]Email[/email]';
+$lang['Font color : [color=color]text']['/color'] = 'Χρώμα Γραμματοσειράς : [χρώμα=χρώμα]κείμενο[/χρώμα]';
+$lang['Grey'] = 'Γκρι';
+$lang['Paragraph : [p]Paragraph']['/p'] = 'Παράγραφος : [p]Παράγραφος[/p]';
+$lang['Purple'] = 'Βυσσινί';
+$lang['huge'] = 'Τεράστιο';
+$lang['large'] = 'Μεγάλο';
+$lang['normal'] = 'Κανονικό';
+$lang['small'] = 'Μικρό';
+$lang['tiny'] = 'Μικροσκοπικό';
 ?>
