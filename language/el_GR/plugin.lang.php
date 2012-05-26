@@ -38,4 +38,12 @@ $lang['large'] = 'Μεγάλο';
 $lang['normal'] = 'Κανονικό';
 $lang['small'] = 'Μικρό';
 $lang['tiny'] = 'Μικροσκοπικό';
+$lang['Bold : [b]bold']['/b'] = 'Έντονα : [b]έντονα[/b]';
+$lang['Center : [center]center']['/center'] = 'Κεντρική στοίχιση:[center]Κεντρική στοίχιση[/center]';
+$lang['Font size : [size=X]text']['/size'] = 'Μέγεθος γραμματοσειράς : [size=X]Κείμενο[/size]';
+$lang['Italic : [i]italic']['/i'] = 'Πλάγια : [i]πλάγια[/i]';
+$lang['Picture : [img]picture']['/img'] = 'Εικόνα : [img]Εικόνα[/img]';
+$lang['Right : [right]right']['/right'] = 'Δεξιά στοίχιση:[center]Δεξιά στοίχιση[/center]';
+$lang['URL : [url=URL]Title']['/url'] = 'URL : [url=URL]Τίτλος[/url]';
+$lang['Underline : [u]underline']['/u'] = 'Υπογράμμιση : [u]υπογράμμιση[/u]';
 ?>
