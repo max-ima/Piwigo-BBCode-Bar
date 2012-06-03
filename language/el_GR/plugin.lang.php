@@ -46,4 +46,9 @@ $lang['Picture : [img]picture']['/img'] = 'Εικόνα : [img]Εικόνα[/img
 $lang['Right : [right]right']['/right'] = 'Δεξιά στοίχιση:[center]Δεξιά στοίχιση[/center]';
 $lang['URL : [url=URL]Title']['/url'] = 'URL : [url=URL]Τίτλος[/url]';
 $lang['Underline : [u]underline']['/u'] = 'Υπογράμμιση : [u]υπογράμμιση[/u]';
+$lang['List element : [li]element']['/li'] = 'Λίστα : [li]Στοιχεία Λίστας[/li]';
+$lang['Ordered list : [ol][li]element[/li]']['/ol'] = 'Λίστα με αρίθμηση : [ol][li]Στοιχεία Λίστας[/li][/ol]';
+$lang['Quote : [quote]quote']['/quote'] = 'Φράση : [quote]φράση[/quote]';
+$lang['Striped  : [s]striped']['/s'] = 'Διακριτή διαγραφή : [s]διακριτή διαγραφή[/s]';
+$lang['Unordered list : [ul][li]element[/li]']['/ul'] = 'Λίστα με κουκκίδες : [ul][li]Στοιχεία Λίστας[/li][/ul]';
 ?>
