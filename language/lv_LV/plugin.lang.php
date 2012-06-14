@@ -33,4 +33,7 @@ $lang['Purple']     = 'Violēta';
 $lang['White']     = 'Balta';
 $lang['Black']     = 'Melna';
 
+$lang['Available options'] = 'Piejamās iespējas';
+$lang['Grey'] = 'Pelēka';
+$lang['List element : [li]element']['/li'] = 'Saraksta elements : [li]element[/li]';
 ?>
