@@ -46,17 +46,17 @@ BBCodeBar = {strip}{ldelim}
     {if isset($BBC_color)}{counter}
     {ldelim}name:'{'Font color : [color=color]text[/color]'|@translate}', className:'markItUpColors', openWith:'[color=[![Color]!]]', closeWith:'[/color]', 
       dropMenu: [
-        {ldelim}name:'{'Yellow'|@translate}', openWith:'[color=yellow]', closeWidth:'[/color]', className:"col1-1" },
-        {ldelim}name:'{'Orange'|@translate}', openWith:'[color=orange]', closeWidth:'[/color]', className:"col1-2" },
-        {ldelim}name:'{'Red'|@translate}', openWith:'[color=red]', closeWidth:'[/color]', className:"col1-3" },
+        {ldelim}name:'{'Yellow'|@translate}', openWith:'[color=yellow]', closeWith:'[/color]', className:"col1-1" },
+        {ldelim}name:'{'Orange'|@translate}', openWith:'[color=orange]', closeWith:'[/color]', className:"col1-2" },
+        {ldelim}name:'{'Red'|@translate}', openWith:'[color=red]', closeWith:'[/color]', className:"col1-3" },
         
-        {ldelim}name:'{'Blue'|@translate}', openWith:'[color=blue]', closeWidth:'[/color]', className:"col2-1" },
-        {ldelim}name:'{'Purple'|@translate}', openWith:'[color=purple]', closeWidth:'[/color]', className:"col2-2" },
-        {ldelim}name:'{'Green'|@translate}', openWith:'[color=green]', closeWidth:'[/color]', className:"col2-3" },
+        {ldelim}name:'{'Blue'|@translate}', openWith:'[color=blue]', closeWith:'[/color]', className:"col2-1" },
+        {ldelim}name:'{'Purple'|@translate}', openWith:'[color=purple]', closeWith:'[/color]', className:"col2-2" },
+        {ldelim}name:'{'Green'|@translate}', openWith:'[color=green]', closeWith:'[/color]', className:"col2-3" },
         
-        {ldelim}name:'{'White'|@translate}', openWith:'[color=white]', closeWidth:'[/color]', className:"col3-1" },
-        {ldelim}name:'{'Grey'|@translate}', openWith:'[color=gray]', closeWidth:'[/color]', className:"col3-2" },
-        {ldelim}name:'{'Black'|@translate}', openWith:'[color=black]', closeWidth:'[/color]', className:"col3-3" }
+        {ldelim}name:'{'White'|@translate}', openWith:'[color=white]', closeWith:'[/color]', className:"col3-1" },
+        {ldelim}name:'{'Grey'|@translate}', openWith:'[color=gray]', closeWith:'[/color]', className:"col3-2" },
+        {ldelim}name:'{'Black'|@translate}', openWith:'[color=black]', closeWith:'[/color]', className:"col3-3" }
       ]
     },
     {/if}

@@ -2,7 +2,7 @@
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 // add BBCodeBar to textarea
-function set_bbcode_bar()
+function set_bbcode_bar($prefilter='picture')
 {
   global $template, $conf, $pwg_loaded_plugins, $page;
   
@@ -16,21 +16,21 @@ function set_bbcode_bar()
   }
 
   $template->assign('BBCODE_PATH', BBcode_PATH);
-  $template->set_prefilter('picture', 'set_bbcode_bar_prefilter');    
+  $template->set_prefilter($prefilter, 'set_bbcode_bar_prefilter');    
 
   // smilies support > 2.3 ## must be parsed after bbcode_bar, because the javascript must be after bbc's one
   if (isset($pwg_loaded_plugins['SmiliesSupport'])) 
   {
     $template->assign('BBC_smilies', true);
-    set_smiliessupport();
+    set_smiliessupport($prefilter);
   }  
 }
 
 function set_bbcode_bar_prefilter($content, &$smarty)
 {
-  $search = '<div id="commentAdd">';
-  $replace = file_get_contents(BBcode_PATH.'/template/bbcode_bar.tpl').$search;
-  return str_replace($search, $replace, $content);
+  $search = '#(<div id="guestbookAdd">|<div id="commentAdd">)#';
+  $replace = file_get_contents(BBcode_PATH.'/template/bbcode_bar.tpl').'$1';
+  return preg_replace($search, $replace, $content);
 }
 
 

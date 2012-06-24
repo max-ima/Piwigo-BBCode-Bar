@@ -25,11 +25,27 @@ function init_bbcode_bar()
 
 function add_bbcode_bar() 
 {
-  global $page;
+  global $page, $pwg_loaded_plugins;
   
   if (isset($page['body_id']) AND $page['body_id'] == 'thePicturePage') 
   {
-    set_bbcode_bar();
+    $prefilter = 'picture';
+  }
+  else if (
+    script_basename() == 'index' and isset($pwg_loaded_plugins['Comments_on_Albums'])
+    and isset($page['section']) and $page['section'] == 'categories' and isset($page['category'])
+    ) 
+  {
+    $prefilter = 'comments_on_albums';
+  }
+  else if (isset($_GET['/guestbook'])) 
+  {
+    $prefilter = 'index';
+  }
+  
+  if (isset($prefilter))
+  {
+    set_bbcode_bar($prefilter);
   }
 }
 
