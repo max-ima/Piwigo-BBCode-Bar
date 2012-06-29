@@ -35,4 +35,5 @@ $lang['White']     = 'ابيض';
 $lang['Grey']         = 'رمادي';
 $lang['Black']     = 'اسود';
   
+$lang['Available options'] = 'الخيارات المتاحة';
 ?>
