@@ -35,4 +35,5 @@ $lang['Unordered list : [ul][li]element[/li][/ul]'] = '无序列表 : [ul][li]�
 $lang['URL : [url=URL]Title[/url]'] = 'URL : [url=URL地址]URL文字[/url]';
 $lang['White'] = '白';
 $lang['Yellow'] = '黄';
+$lang['Available options'] = '可用选项';
 ?>
