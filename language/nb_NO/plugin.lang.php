@@ -33,4 +33,7 @@ $lang['Purple']     = 'Fiolett';
 $lang['White']     = 'Vit';
 $lang['Black']     = 'Svart';
 
+$lang['Available options'] = 'Tilgjengelige valg';
+$lang['Grey'] = 'Grå';
+$lang['List element : [li]element']['/li'] = 'List elementer: [li]element[/li]';
 ?>
