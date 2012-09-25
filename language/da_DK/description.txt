@@ -1,0 +1,1 @@
+Tillad brug af BBCode i kommentarer og beskrivelser.
