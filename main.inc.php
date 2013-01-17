@@ -38,7 +38,7 @@ function add_bbcode_bar()
   {
     $prefilter = 'comments_on_albums';
   }
-  else if (isset($_GET['/guestbook'])) 
+  else if (isset($page['section']) and $page['section'] == 'guestbook') 
   {
     $prefilter = 'index';
   }
