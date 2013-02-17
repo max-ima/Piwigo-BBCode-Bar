@@ -20,6 +20,7 @@ function init_bbcode_bar()
 {
   remove_event_handler('render_comment_content', 'render_comment_content');
   add_event_handler('render_comment_content', 'BBCodeParse');
+  add_event_handler('render_contact_content', 'BBCodeParse');
   add_event_handler('loc_after_page_header', 'add_bbcode_bar');
 }
 
@@ -30,6 +31,7 @@ function add_bbcode_bar()
   if (isset($page['body_id']) AND $page['body_id'] == 'thePicturePage') 
   {
     $prefilter = 'picture';
+    $textarea_id = 'contentid';
   }
   else if (
     script_basename() == 'index' and isset($pwg_loaded_plugins['Comments_on_Albums'])
@@ -37,15 +39,22 @@ function add_bbcode_bar()
     ) 
   {
     $prefilter = 'comments_on_albums';
+    $textarea_id = 'contentid';
   }
   else if (isset($page['section']) and $page['section'] == 'guestbook') 
   {
     $prefilter = 'index';
+    $textarea_id = 'contentid';
+  }
+  else if (isset($page['section']) and $page['section'] == 'contact') 
+  {
+    $prefilter = 'index';
+    $textarea_id = 'cf_content';
   }
   
   if (isset($prefilter))
   {
-    set_bbcode_bar($prefilter);
+    set_bbcode_bar($prefilter, $textarea_id);
   }
 }
 

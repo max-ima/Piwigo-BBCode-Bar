@@ -2,33 +2,74 @@
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 // add BBCodeBar to textarea
-function set_bbcode_bar($prefilter='picture')
+function set_bbcode_bar($prefilter='picture', $textarea_id='contentid')
 {
   global $template, $conf, $pwg_loaded_plugins, $page;
   
   load_language('plugin.lang', dirname(__FILE__) . '/');
   $conf_bbcode_bar = unserialize($conf['bbcode_bar']);
-
+  
+  
   // buttons
-  foreach(unserialize(BBcode_codes) as $key) 
+  $tpl_codes = array();
+  foreach (unserialize(BBcode_codes) as $key) 
   {
-    if ($conf_bbcode_bar[$key]) $template->assign('BBC_'.$key, true);
+    $tpl_codes[$key] = (bool)$conf_bbcode_bar[$key];
   }
-
-  $template->assign('BBCODE_PATH', BBcode_PATH);
+  $tpl_codes['smilies'] = isset($pwg_loaded_plugins['SmiliesSupport']);
+  
+  
+  // calculate separators between groups
+  $groups = array(
+    array('b','i','u','s'),
+    array('p','center','right','quote'),
+    array('ol','ul'),
+    array('img','url','email'),
+    array('size','color','smilies'),
+    );
+    
+  $tpl_groups = array();
+  $count = 0;
+  for ($i=0; $i<count($groups)-1; $i++)
+  {
+    $separator = false;
+    foreach ($groups[$i] as $code)
+    {
+      if ($tpl_codes[$code]) $count++;
+    }
+    if ($count>0)
+    {
+      foreach ($groups[$i+1] as $code)
+      {
+        if ($tpl_codes[$code]) $separator = true;
+      }
+    }
+    if ($separator)
+    {
+      $tpl_groups[$i] = true;
+      $count = 0;
+    }
+  }
+  
+  $template->assign(array(
+    'BBC' => $tpl_codes,
+    'SEP' => $tpl_groups,
+    'BBCODE_PATH' => BBcode_PATH,
+    'BBCODE_ID' => $textarea_id,
+    ));
+  
   $template->set_prefilter($prefilter, 'set_bbcode_bar_prefilter');    
 
   // smilies support > 2.3 ## must be parsed after bbcode_bar, because the javascript must be after bbc's one
   if (isset($pwg_loaded_plugins['SmiliesSupport'])) 
   {
-    $template->assign('BBC_smilies', true);
     set_smiliessupport($prefilter);
   }  
 }
 
 function set_bbcode_bar_prefilter($content, &$smarty)
 {
-  $search = '#(<div id="guestbookAdd">|<div id="commentAdd">)#';
+  $search = '#(<div id="guestbookAdd">|<div id="commentAdd">|<div class="contact">)#';
   $replace = file_get_contents(BBcode_PATH.'/template/bbcode_bar.tpl').'$1';
   return preg_replace($search, $replace, $content);
 }
