@@ -63,7 +63,7 @@ function set_bbcode_bar($prefilter='picture', $textarea_id='contentid')
   // smilies support > 2.3 ## must be parsed after bbcode_bar, because the javascript must be after bbc's one
   if (isset($pwg_loaded_plugins['SmiliesSupport'])) 
   {
-    set_smiliessupport($prefilter);
+    set_smiliessupport($prefilter, $textarea_id);
   }  
 }
 

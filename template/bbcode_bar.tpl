@@ -22,12 +22,12 @@ BBCodeBar = {strip}{ldelim}
     
     {if $BBC.ul}{counter}{ldelim}name:'{'Unordered list : [ul][li]element[/li][/ul]'|@translate}', openWith:'[ul]\n', closeWith:'\n[/ul]', className:'markItUpListUL'},{/if}
     {if $BBC.ol}{counter}{ldelim}name:'{'Ordered list : [ol][li]element[/li][/ol]'|@translate}', openWith:'[ol]\n', closeWith:'\n[/ol]', className:'markItUpListOL'},{/if}
-    {if $BBC.ul OR $BBC.ol}{counter}{ldelim}name:'{'List element : [li]element[/li]'|@translate}', openWith:'[li]', closeWith:'[/li]', className:'markItUpListLI'},{/if}
+    {if $BBC.ul OR $BBC.ol}{counter}{ldelim}name:'{'List element : [li]element[/li]'|@translate}', multiline:true, openWith:'[li]', closeWith:'[/li]', className:'markItUpListLI'},{/if}
     
     {if $SEP[2]}{counter}{ldelim}separator:'|' },{/if}
     
-    {if $BBC.img}{counter}{ldelim}name:'{'Picture : [img]picture[/img]'|@translate}', key:'P', replaceWith:'[img][![Url]!][/img]', className:'markItUpPicture'},{/if}
-    {if $BBC.url}{counter}{ldelim}name:'{'URL : [url=URL]Title[/url]'|@translate}', key:'L', openWith:'[url=[![Url]!]]', closeWith:'[/url]', className:'markItUpLink'},{/if}
+    {if $BBC.img}{counter}{ldelim}name:'{'Picture : [img]picture[/img]'|@translate}', key:'P', replaceWith:'[img][![Source:!:http://]!][/img]', className:'markItUpPicture'},{/if}
+    {if $BBC.url}{counter}{ldelim}name:'{'URL : [url=URL]Title[/url]'|@translate}', key:'L', openWith:'[url=[![Url:!:http://]!]]', closeWith:'[/url]', className:'markItUpLink'},{/if}
     {if $BBC.email}{counter}{ldelim}name:'{'E-mail : [email]Email[/email]'|@translate}', key:'M', replaceWith:'[email][![Mail]!][/email]', className:'markItUpMail'},{/if}
     
     {if $SEP[3]}{counter}{ldelim}separator:'|'},{/if}
@@ -63,8 +63,7 @@ BBCodeBar = {strip}{ldelim}
   ]
 };{/strip}
 
-jQuery(document).ready(function() {ldelim}
-  jQuery('#{$BBCODE_ID}').markItUp(BBCodeBar);
-  jQuery('.markItUpHeader>ul').css('width', {$bbc_counter}*22);
-});
+
+jQuery('#{$BBCODE_ID}').markItUp(BBCodeBar);
+jQuery('.markItUpHeader>ul').css('width', {$bbc_counter}*22);
 {/footer_script}
