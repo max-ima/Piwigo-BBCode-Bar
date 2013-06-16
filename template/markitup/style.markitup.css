@@ -1,6 +1,7 @@
 /* common */
 .markItUp * {
-  margin:0px; padding:0px;
+  margin:0px;
+  padding:0px;
   outline:none;
 }
 .markItUp a:link,
@@ -45,7 +46,7 @@
   display:block;
 }
 .markItUpHeader ul .markItUpDropMenu {
-  background:transparent url(images/menu.png) no-repeat 120% 100%;
+  background:transparent url('images/menu.png') no-repeat 120% 100%;
   margin-right:5px;
 }
 /* next rows of buttons */
@@ -61,10 +62,6 @@
   float:none;
   margin:0px;
 }
-.markItUpHeader ul .markItUpSize li {
-  border-bottom:1px solid #444;
-  border-radius:2px;
-}
 .markItUpHeader ul .markItUpSeparator {
   margin:2px 10px !important;
   width:1px;
@@ -76,10 +73,9 @@
 /* links */
 .markItUpHeader ul a {
   display:block;
-  width:16px; height:16px;
+  width:16px;
+  height:16px;
   text-indent:-10000px;
-  background-position:center center;
-  background-repeat:no-repeat;
   padding:2px;
   border:1px solid transparent;
 }
@@ -91,105 +87,128 @@
   text-indent:0;
   border:0;
 }
-.markItUpHeader ul .markItUpSize li a {
-  width:90px; 
-  padding:2px 5px 2px 25px;
-  background-position:2px 50%;
-}
-.markItUpHeader ul ul a:hover  {
-}
-.markItUpHeader ul .markItUpSize li a:hover  {
-  color:#FFF;
-  background-color:#000;
-}
 
 /* icons definitions */
-.markItUp .markItUpBold a {
-  background-image:url(images/bold.png);
-}
-.markItUp .markItUpItalic a {
-  background-image:url(images/italic.png);
-}
-.markItUp .markItUpUnderline a {
-  background-image:url(images/underline.png);
-}
-.markItUp .markItUpStroke a {
-  background-image:url(images/stroke.png);
+.miuIcon>a {
+  background:url('images/icons.png') 20px 20px no-repeat;
 }
 
-.markItUp .markItUpParagraph a {
-  background-image:url(images/p.png);
+.miuBold>a {
+  background-position:0px 0px;
 }
-.markItUp .markItUpCenter a {
-  background-image:url(images/center.png);
+.markItUp .miuItalic>a {
+  background-position:-20px 0px;
 }
-.markItUp .markItUpRight a {
-  background-image:url(images/right.png);
+.markItUp .miuUnderline>a {
+  background-position:-40px 0px;
 }
-
-.markItUp .markItUpListUL a {
-  background-image:url(images/list-bullet.png);
-}
-.markItUp .markItUpListOL a {
-  background-image:url(images/list-numeric.png);
-}
-.markItUp .markItUpListLI a {
-  background-image:url(images/list-item.png);
+.markItUp .miuStroke>a {
+  background-position:-60px 0px;
 }
 
-.markItUp .markItUpPicture a  {
-  background-image:url(images/picture.png);
+.markItUp .miuParagraph>a {
+  background-position:0px -20px;
 }
-.markItUp .markItUpLink a {
-  background-image:url(images/link.png);
+.markItUp .miuCenter>a {
+  background-position:-20px -20px;
 }
-.markItUp .markItUpMail a {
-  background-image:url(images/mail.png);
-}
-.markItUp .markItUpQuote a {
-  background-image:url(images/quote.png);
+.markItUp .miuRight>a {
+  background-position:-40px -20px;
 }
 
-.markItUp .markItUpSize a {
-  background-image:url(images/fonts.png);
+.markItUp .miuListUL>a {
+  background-position:0px -40px;
 }
-.markItUp .preview a {
-  background-image:url(images/preview.png);
+.markItUp .miuListOL>a {
+  background-position:-20px -40px;
 }
+.markItUp .miuListLI>a {
+  background-position:-40px -40px;
+}
+
+.markItUp .miuPicture>a  {
+  background-position:0px -60px;
+}
+.markItUp .miuLink>a {
+  background-position:-20px -60px;
+}
+.markItUp .miuMail>a {
+  background-position:-40px -60px;
+}
+.markItUp .miuQuote>a {
+  background-position:-60px -20px;
+}
+
+/* sizes */
+.markItUp .miuSize>a {
+  background-position:-60px -40px;
+}
+  .markItUpHeader ul .miuSize li {
+    border-bottom:1px solid #444;
+    border-radius:2px;
+  }
+  .markItUpHeader ul .miuSize li a {
+    width:auto; 
+    padding:2px 5px;
+    background-position:2px 50%;
+    height:auto;
+  }
+  .markItUpHeader ul .miuSize li a:hover  {
+    color:#FFF;
+    background-color:#000;
+  }
+  .markItUp .miuSizeTiny {
+    font-size:7px;
+  }
+  .markItUp .miuSizeSmall {
+    font-size:9px;
+  }
+  .markItUp .miuSizeNormal {
+    font-size:12px;
+  }
+  .markItUp .miuSizeLarge {
+    font-size:18px;
+  }
+  .markItUp .miuSizeHuge {
+    white-space:nowrap;
+    font-size:24px;
+  }
 
 /* colors */
-.markItUp .markItUpColors a {
-  background-image:url(images/colors.png);
+.markItUp .miuColors>a {
+  background-position:-60px -60px;
 }
-  .markItUp .markItUpColors ul {
+  .markItUp .miuColors ul {
     width:81px;
     padding:1px;  
   }
-  .markItUp .markItUpColors  li {
+  .markItUp .miuColors  li {
     border:1px solid white;
-    width:25px;  height:25px;
+    width:25px;
+    height:25px;
     overflow:hidden;
-    padding:0px; margin:0px;
+    padding:0px;
+    margin:0px;
     float:left;
     border-radius:2px;
   }
-  .markItUp .markItUpColors ul a {
-    width:25px;  height:25px;
-    color:transparent;
+  .markItUp .miuColors ul a {
+    width:25px;
+    height:25px;
+    text-indent:-10000px;
   }
-  .markItUp .markItUpColors li:hover {
-    background-color:none;
+  .markItUp .miuColors li:hover {
     border:1px solid #08e;
   }
   
-  .markItUp .markItUpColors .col1-1 a { background:yellow; }
-  .markItUp .markItUpColors .col1-2 a { background:orange; }
-  .markItUp .markItUpColors .col1-3 a { background:red; }
+  .markItUp .miuColors .col1-1 a { background:yellow; }
+  .markItUp .miuColors .col1-2 a { background:orange; }
+  .markItUp .miuColors .col1-3 a { background:red; }
   
-  .markItUp .markItUpColors .col2-1 a { background:blue; }
-  .markItUp .markItUpColors .col2-2 a { background:purple; }
-  .markItUp .markItUpColors .col2-3 a { background:green; }
+  .markItUp .miuColors .col2-1 a { background:blue; }
+  .markItUp .miuColors .col2-2 a { background:purple; }
+  .markItUp .miuColors .col2-3 a { background:green; }
   
-  .markItUp .markItUpColors .col3-1 a { background:white; }
-  .markItUp .markItUpColors .col3-2 a { background:gray; }
-  .markItUp .markItUpColors .col3-3 a { background:black; }
+  .markItUp .miuColors .col3-1 a { background:white; }
+  .markItUp .miuColors .col3-2 a { background:gray; }
+  .markItUp .miuColors .col3-3 a { background:black; }

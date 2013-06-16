@@ -25,7 +25,8 @@ function set_bbcode_bar($prefilter='picture', $textarea_id='contentid')
     array('p','center','right','quote'),
     array('ol','ul'),
     array('img','url','email'),
-    array('size','color','smilies'),
+    array('size','color'),
+    array('smilies'),
     );
     
   $tpl_groups = array();

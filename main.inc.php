@@ -3,7 +3,7 @@
 Plugin Name: BBCode Bar
 Version: auto
 Description: Allow use BBCode for comments and descriptions.
-Plugin URI: http://piwigo.org/ext/extension_view.php?eid=140
+Plugin URI: auto
 Author: Atadilo & P@t & Mistic
 */
 

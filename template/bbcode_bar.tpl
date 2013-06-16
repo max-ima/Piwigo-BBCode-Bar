@@ -6,45 +6,45 @@ BBCodeBar = {strip}{ldelim}
   markupSet: [
     {counter start=0 print=false assign=bbc_counter}
     
-    {if $BBC.b}{counter}{ldelim}name:'{'Bold : [b]bold[/b]'|@translate}', key:'B', openWith:'[b]', closeWith:'[/b]', className:'markItUpBold'},{/if}
-    {if $BBC.i}{counter}{ldelim}name:'{'Italic : [i]italic[/i]'|@translate}', key:'I', openWith:'[i]', closeWith:'[/i]', className:'markItUpItalic'},{/if}
-    {if $BBC.u}{counter}{ldelim}name:'{'Underline : [u]underline[/u]'|@translate}', key:'U', openWith:'[u]', closeWith:'[/u]', className:'markItUpUnderline'},{/if}
-    {if $BBC.s}{counter}{ldelim}name:'{'Striped  : [s]striped[/s]'|@translate}', key:'S', openWith:'[s]', closeWith:'[/s]', className:'markItUpStroke'},{/if}
+    {if $BBC.b}{counter}{ldelim}name:'{'Bold : [b]bold[/b]'|@translate}', key:'B', openWith:'[b]', closeWith:'[/b]', className:'miuIcon miuBold'},{/if}
+    {if $BBC.i}{counter}{ldelim}name:'{'Italic : [i]italic[/i]'|@translate}', key:'I', openWith:'[i]', closeWith:'[/i]', className:'miuIcon miuItalic'},{/if}
+    {if $BBC.u}{counter}{ldelim}name:'{'Underline : [u]underline[/u]'|@translate}', key:'U', openWith:'[u]', closeWith:'[/u]', className:'miuIcon miuUnderline'},{/if}
+    {if $BBC.s}{counter}{ldelim}name:'{'Striped  : [s]striped[/s]'|@translate}', key:'S', openWith:'[s]', closeWith:'[/s]', className:'miuIcon miuStroke'},{/if}
     
     {if $SEP[0]}{counter}{ldelim}separator:'|'},{/if}
     
-    {if $BBC.p}{counter}{ldelim}name:'{'Paragraph : [p]Paragraph[/p]'|@translate}', openWith:'[p]', closeWith:'[/p]', className:'markItUpParagraph'},{/if}
-    {if $BBC.center}{counter}{ldelim}name:'{'Center : [center]center[/center]'|@translate}', openWith:'[center]', closeWith:'[/center]', className:'markItUpCenter'},{/if}
-    {if $BBC.right}{counter}{ldelim}name:'{'Right : [right]right[/right]'|@translate}', openWith:'[right]', closeWith:'[/right]', className:'markItUpRight'},{/if}
-    {if $BBC.quote}{counter}{ldelim}name:'{'Quote : [quote]quote[/quote]'|@translate}', openWith:'[quote]', closeWith:'[/quote]', className:'markItUpQuote'},{/if}
+    {if $BBC.p}{counter}{ldelim}name:'{'Paragraph : [p]Paragraph[/p]'|@translate}', openWith:'[p]', closeWith:'[/p]', className:'miuIcon miuParagraph'},{/if}
+    {if $BBC.center}{counter}{ldelim}name:'{'Center : [center]center[/center]'|@translate}', openWith:'[center]', closeWith:'[/center]', className:'miuIcon miuCenter'},{/if}
+    {if $BBC.right}{counter}{ldelim}name:'{'Right : [right]right[/right]'|@translate}', openWith:'[right]', closeWith:'[/right]', className:'miuIcon miuRight'},{/if}
+    {if $BBC.quote}{counter}{ldelim}name:'{'Quote : [quote]quote[/quote]'|@translate}', openWith:'[quote]', closeWith:'[/quote]', className:'miuIcon miuQuote'},{/if}
     
     {if $SEP[1]}{counter}{ldelim}separator:'|'},{/if}
     
-    {if $BBC.ul}{counter}{ldelim}name:'{'Unordered list : [ul][li]element[/li][/ul]'|@translate}', openWith:'[ul]\n', closeWith:'\n[/ul]', className:'markItUpListUL'},{/if}
-    {if $BBC.ol}{counter}{ldelim}name:'{'Ordered list : [ol][li]element[/li][/ol]'|@translate}', openWith:'[ol]\n', closeWith:'\n[/ol]', className:'markItUpListOL'},{/if}
-    {if $BBC.ul OR $BBC.ol}{counter}{ldelim}name:'{'List element : [li]element[/li]'|@translate}', multiline:true, openWith:'[li]', closeWith:'[/li]', className:'markItUpListLI'},{/if}
+    {if $BBC.ul}{counter}{ldelim}name:'{'Unordered list : [ul][li]element[/li][/ul]'|@translate}', openWith:'[ul]\n', closeWith:'\n[/ul]', className:'miuIcon miuListUL'},{/if}
+    {if $BBC.ol}{counter}{ldelim}name:'{'Ordered list : [ol][li]element[/li][/ol]'|@translate}', openWith:'[ol]\n', closeWith:'\n[/ol]', className:'miuIcon miuListOL'},{/if}
+    {if $BBC.ul OR $BBC.ol}{counter}{ldelim}name:'{'List element : [li]element[/li]'|@translate}', multiline:true, openWith:'[li]', closeWith:'[/li]', className:'miuIcon miuListLI'},{/if}
     
     {if $SEP[2]}{counter}{ldelim}separator:'|' },{/if}
     
-    {if $BBC.img}{counter}{ldelim}name:'{'Picture : [img]picture[/img]'|@translate}', key:'P', replaceWith:'[img][![Source:!:http://]!][/img]', className:'markItUpPicture'},{/if}
-    {if $BBC.url}{counter}{ldelim}name:'{'URL : [url=URL]Title[/url]'|@translate}', key:'L', openWith:'[url=[![Url:!:http://]!]]', closeWith:'[/url]', className:'markItUpLink'},{/if}
-    {if $BBC.email}{counter}{ldelim}name:'{'E-mail : [email]Email[/email]'|@translate}', key:'M', replaceWith:'[email][![Mail]!][/email]', className:'markItUpMail'},{/if}
+    {if $BBC.img}{counter}{ldelim}name:'{'Picture : [img]picture[/img]'|@translate}', key:'P', replaceWith:'[img][![Source:!:http://]!][/img]', className:'miuIcon miuPicture'},{/if}
+    {if $BBC.url}{counter}{ldelim}name:'{'URL : [url=URL]Title[/url]'|@translate}', key:'L', openWith:'[url=[![Url:!:http://]!]]', closeWith:'[/url]', className:'miuIcon miuLink'},{/if}
+    {if $BBC.email}{counter}{ldelim}name:'{'E-mail : [email]Email[/email]'|@translate}', key:'M', replaceWith:'[email][![Mail]!][/email]', className:'miuIcon miuMail'},{/if}
     
     {if $SEP[3]}{counter}{ldelim}separator:'|'},{/if}
     
     {if $BBC.size}{counter}
-    {ldelim}name:'{'Font size : [size=X]text[/size]'|@translate}', className:'markItUpSize',
+    {ldelim}name:'{'Font size : [size=X]text[/size]'|@translate}', className:'miuIcon miuSize',
       dropMenu :[
-        {ldelim}name:'{'tiny'|@translate}', openWith:'[size=7]', closeWith:'[/size]' },
-        {ldelim}name:'{'small'|@translate}', openWith:'[size=9]', closeWith:'[/size]' },
-        {ldelim}name:'{'normal'|@translate}', openWith:'[size=12]', closeWith:'[/size]' },
-        {ldelim}name:'{'large'|@translate}', openWith:'[size=18]', closeWith:'[/size]' },
-        {ldelim}name:'{'huge'|@translate}', openWith:'[size=24]', closeWith:'[/size]' },
+        {ldelim}name:'{'tiny'|@translate}', openWith:'[size=7]', closeWith:'[/size]', className:'miuSizeTiny' },
+        {ldelim}name:'{'small'|@translate}', openWith:'[size=9]', closeWith:'[/size]', className:'miuSizeSmall' },
+        {ldelim}name:'{'normal'|@translate}', openWith:'[size=12]', closeWith:'[/size]', className:'miuSizeNormal' },
+        {ldelim}name:'{'large'|@translate}', openWith:'[size=18]', closeWith:'[/size]', className:'miuSizeLarge' },
+        {ldelim}name:'{'huge'|@translate}', openWith:'[size=24]', closeWith:'[/size]', className:'miuSizeHuge' },
       ]
     },
     {/if}
     {if $BBC.color}{counter}
-    {ldelim}name:'{'Font color : [color=color]text[/color]'|@translate}', className:'markItUpColors', openWith:'[color=[![Color]!]]', closeWith:'[/color]', 
+    {ldelim}name:'{'Font color : [color=color]text[/color]'|@translate}', className:'miuIcon miuColors', openWith:'[color=[![Color]!]]', closeWith:'[/color]', 
       dropMenu: [
         {ldelim}name:'{'Yellow'|@translate}', openWith:'[color=yellow]', closeWith:'[/color]', className:"col1-1" },
         {ldelim}name:'{'Orange'|@translate}', openWith:'[color=orange]', closeWith:'[/color]', className:"col1-2" },
@@ -60,6 +60,8 @@ BBCodeBar = {strip}{ldelim}
       ]
     },
     {/if}
+    
+    {if $SEP[4]}{counter}{ldelim}separator:'|'},{/if}
   ]
 };{/strip}
 
