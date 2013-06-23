@@ -18,11 +18,11 @@ $lang['URL : [url=URL]Title[/url]']         = 'الرابط : [url=URL]العن�
 $lang['E-mail : [email]Email[/email]']         = 'البريد : [email]البريد[/email]';
  
 $lang['Font size : [size=X]text[/size]']         = 'حجم الخط : [size=X]النص[/size]';
-$lang['tiny']             = 'صغير جدا';
-$lang['small']             = 'صغير';
-$lang['normal']         = 'عادي';
-$lang['large']             = 'كبير';
-$lang['huge']             = 'كبير جدا';
+$lang['tiny font']             = 'صغير جدا';
+$lang['small font']             = 'صغير';
+$lang['normal font']         = 'عادي';
+$lang['large font']             = 'كبير';
+$lang['huge font']             = 'كبير جدا';
  
 $lang['Font color : [color=color]text[/color]']     = 'لون الخط : [color=color]النص[/color]';
 $lang['Red']         = 'احمر';

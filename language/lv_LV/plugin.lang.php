@@ -17,11 +17,11 @@ $lang['URL : [url=URL]Title[/url]']         = 'URL : [url=URL]Title[/url]';
 $lang['E-mail : [email]Email[/email]']         = 'E-pasts : [email]Email[/email]';
 
 $lang['Font size : [size=X]text[/size]']         = 'Fonta lielums : [size=X]text[/size]';
-$lang['tiny']         = 'Sīks';
-$lang['small']         = 'Mazs';
-$lang['normal']     = 'Normāls';
-$lang['large']         = 'Liels';
-$lang['huge']         = 'Milzīgs';
+$lang['tiny font']         = 'Sīks';
+$lang['small font']         = 'Mazs';
+$lang['normal font']     = 'Normāls';
+$lang['large font']         = 'Liels';
+$lang['huge font']         = 'Milzīgs';
 
 $lang['Font color : [color=color]text[/color]']     = 'Fonta krāsa : [color=color]text[/color]';
 $lang['Red']         = 'Sarkana';

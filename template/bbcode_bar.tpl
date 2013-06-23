@@ -1,7 +1,7 @@
-{combine_script id="markitup" require='jquery' path=$BBCODE_PATH|@cat:"template/markitup/jquery.markitup.js"}
-{combine_css path=$BBCODE_PATH|@cat:"template/markitup/style.markitup.css"}
+{combine_script id='markitup' require='jquery' load='footer' path=$BBCODE_PATH|@cat:'template/markitup/jquery.markitup.js'}
+{combine_css path=$BBCODE_PATH|@cat:'template/markitup/style.markitup.css'}
 
-{footer_script require='jquery'}
+{footer_script require='markitup'}
 BBCodeBar = {strip}{ldelim}
   markupSet: [
     {counter start=0 print=false assign=bbc_counter}
@@ -35,11 +35,11 @@ BBCodeBar = {strip}{ldelim}
     {if $BBC.size}{counter}
     {ldelim}name:'{'Font size : [size=X]text[/size]'|@translate}', className:'miuIcon miuSize',
       dropMenu :[
-        {ldelim}name:'{'tiny'|@translate}', openWith:'[size=7]', closeWith:'[/size]', className:'miuSizeTiny' },
-        {ldelim}name:'{'small'|@translate}', openWith:'[size=9]', closeWith:'[/size]', className:'miuSizeSmall' },
-        {ldelim}name:'{'normal'|@translate}', openWith:'[size=12]', closeWith:'[/size]', className:'miuSizeNormal' },
-        {ldelim}name:'{'large'|@translate}', openWith:'[size=18]', closeWith:'[/size]', className:'miuSizeLarge' },
-        {ldelim}name:'{'huge'|@translate}', openWith:'[size=24]', closeWith:'[/size]', className:'miuSizeHuge' },
+        {ldelim}name:'{'tiny font'|@translate}', openWith:'[size=7]', closeWith:'[/size]', className:'miuSizeTiny' },
+        {ldelim}name:'{'small font'|@translate}', openWith:'[size=9]', closeWith:'[/size]', className:'miuSizeSmall' },
+        {ldelim}name:'{'normal font'|@translate}', openWith:'[size=12]', closeWith:'[/size]', className:'miuSizeNormal' },
+        {ldelim}name:'{'large font'|@translate}', openWith:'[size=18]', closeWith:'[/size]', className:'miuSizeLarge' },
+        {ldelim}name:'{'huge font'|@translate}', openWith:'[size=24]', closeWith:'[/size]', className:'miuSizeHuge' },
       ]
     },
     {/if}

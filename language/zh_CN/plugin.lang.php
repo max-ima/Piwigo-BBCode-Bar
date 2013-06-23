@@ -3,11 +3,11 @@
 
 
 
-$lang['tiny'] = "极细";
-$lang['small'] = "小号";
-$lang['normal'] = "标准";
-$lang['large'] = "大号";
-$lang['huge'] = "超大";
+$lang['tiny font'] = "极细";
+$lang['small font'] = "小号";
+$lang['normal font'] = "标准";
+$lang['large font'] = "大号";
+$lang['huge font'] = "超大";
 
   
 $lang['Black'] = '黑';

@@ -46,9 +46,9 @@ $lang['Underline : [u]underline']['/u'] = 'Subratllat: [u]underline[/u]';
 $lang['Unordered list : [ul][li]element[/li]']['/ul'] = 'Llista desordenada: [ul][li]element[/li][/ul]';
 $lang['White'] = 'Blanc';
 $lang['Yellow'] = 'Groc';
-$lang['huge'] = 'Enorme';
-$lang['large'] = 'Gran';
-$lang['normal'] = 'Normal';
-$lang['small'] = 'Petit';
-$lang['tiny'] = 'Diminut';
+$lang['huge font'] = 'Enorme';
+$lang['large font'] = 'Gran';
+$lang['normal font'] = 'Normal';
+$lang['small font'] = 'Petit';
+$lang['tiny font'] = 'Diminut';
 ?>

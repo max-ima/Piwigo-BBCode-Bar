@@ -17,11 +17,11 @@ $lang['URL : [url=URL]Title[/url]'] = 'URL: [url=URL]Название[/url]';
 $lang['E-mail : [email]Email[/email]'] = 'E-mail: [email]электронный адрес[/email]';
 
 $lang['Font size : [size=X]text[/size]'] = 'Размер шрифта: [size=X]текст[/size]';
-$lang['tiny'] = 'Крошечный';
-$lang['small'] = 'Маленький';
-$lang['normal'] = 'Нормальный';
-$lang['large'] = 'Большой';
-$lang['huge'] = 'Громадный';
+$lang['tiny font'] = 'Крошечный';
+$lang['small font'] = 'Маленький';
+$lang['normal font'] = 'Нормальный';
+$lang['large font'] = 'Большой';
+$lang['huge font'] = 'Громадный';
 
 $lang['Font color : [color=color]text[/color]'] = 'Цвет шрифта : [color=color]текст[/color]';
 $lang['Red'] = 'Красный';

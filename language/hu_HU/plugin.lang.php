@@ -17,11 +17,11 @@ $lang['URL : [url=URL]Title[/url]'] = 'URL : [url=URL cím]megjelenő szöveg[/u
 $lang['E-mail : [email]Email[/email]'] = 'E-mail : [email]e-mail cím[/email]';
 
 $lang['Font size : [size=X]text[/size]'] = 'Betűméret : [size=X]betű mérete[/size]';
-$lang['tiny'] = 'Apró';
-$lang['small'] = 'Kicsi';
-$lang['normal'] = 'Normál';
-$lang['large'] = 'Közepes';
-$lang['huge'] = 'Nagy';
+$lang['tiny font'] = 'Apró';
+$lang['small font'] = 'Kicsi';
+$lang['normal font'] = 'Normál';
+$lang['large font'] = 'Közepes';
+$lang['huge font'] = 'Nagy';
 
 $lang['Font color : [color=color]text[/color]'] = 'Betűszín : [color=szín]betű színe[/color]';
 $lang['Red'] = 'Piros';

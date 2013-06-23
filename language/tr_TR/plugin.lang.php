@@ -46,9 +46,9 @@ $lang['Underline : [u]underline']['/u'] = 'Altı çizili: [u]altı çizili[/u]';
 $lang['Unordered list : [ul][li]element[/li]']['/ul'] = 'Sıralanmamış liste: [ul][li]öğe[/li][/ul]';
 $lang['White'] = 'Beyaz';
 $lang['Yellow'] = 'Sarı';
-$lang['huge'] = 'Kocaman';
-$lang['large'] = 'Büyük';
-$lang['normal'] = 'Normal';
-$lang['small'] = 'Küçük';
-$lang['tiny'] = 'Minicik';
+$lang['huge font'] = 'Kocaman';
+$lang['large font'] = 'Büyük';
+$lang['normal font'] = 'Normal';
+$lang['small font'] = 'Küçük';
+$lang['tiny font'] = 'Minicik';
 ?>

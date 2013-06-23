@@ -18,11 +18,11 @@ $lang['URL : [url=URL]Title[/url]'] = 'URL : [hier komt bv: http://www.hetwebdad
 $lang['E-mail : [email]Email[/email]'] =   'E-mail : [email]hier komt het e-mail adres[/email]';
 
 $lang['Font size : [size=X]text[/size]'] = 'Letter grootte : [size=X]tekst[/size]';
-$lang['tiny'] = 'Zeer klein';
-$lang['small'] = 'Klein';
-$lang['normal'] = 'Normaal';
-$lang['large'] = 'Groot';
-$lang['huge'] = 'Zeer groot';
+$lang['tiny font'] = 'Zeer klein';
+$lang['small font'] = 'Klein';
+$lang['normal font'] = 'Normaal';
+$lang['large font'] = 'Groot';
+$lang['huge font'] = 'Zeer groot';
 
 $lang['Font color : [color=color]text[/color]'] = 'Tekst kleur : [color=color]text[/color]';
 $lang['Red'] = 'Rood';

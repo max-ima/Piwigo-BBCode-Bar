@@ -33,11 +33,11 @@ $lang['Font color : [color=color]text']['/color'] = 'Χρώμα Γραμματο
 $lang['Grey'] = 'Γκρι';
 $lang['Paragraph : [p]Paragraph']['/p'] = 'Παράγραφος : [p]Παράγραφος[/p]';
 $lang['Purple'] = 'Βυσσινί';
-$lang['huge'] = 'Τεράστιο';
-$lang['large'] = 'Μεγάλο';
-$lang['normal'] = 'Κανονικό';
-$lang['small'] = 'Μικρό';
-$lang['tiny'] = 'Μικροσκοπικό';
+$lang['huge font'] = 'Τεράστιο';
+$lang['large font'] = 'Μεγάλο';
+$lang['normal font'] = 'Κανονικό';
+$lang['small font'] = 'Μικρό';
+$lang['tiny font'] = 'Μικροσκοπικό';
 $lang['Bold : [b]bold']['/b'] = 'Έντονα : [b]έντονα[/b]';
 $lang['Center : [center]center']['/center'] = 'Κεντρική στοίχιση:[center]Κεντρική στοίχιση[/center]';
 $lang['Font size : [size=X]text']['/size'] = 'Μέγεθος γραμματοσειράς : [size=X]Κείμενο[/size]';

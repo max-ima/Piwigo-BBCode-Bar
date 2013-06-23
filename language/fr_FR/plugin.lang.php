@@ -20,11 +20,11 @@ $lang['URL : [url=URL]Title[/url]'] = 'URL : [url=Page URL]Nom de la page[/url]'
 $lang['E-mail : [email]Email[/email]'] = 'E-mail : [email]Email[/email]';
 
 $lang['Font size : [size=X]text[/size]'] = 'Taille des caractères : [size=X]texte[/size]';
-$lang['tiny'] = 'Tout petit';
-$lang['small'] = 'Petit';
-$lang['normal'] = 'Normale';
-$lang['large'] = 'Grand';
-$lang['huge'] = 'Très grand';
+$lang['tiny font'] = 'Tout petit';
+$lang['small font'] = 'Petit';
+$lang['normal font'] = 'Normale';
+$lang['large font'] = 'Grand';
+$lang['huge font'] = 'Très grand';
 
 $lang['Font color : [color=color]text[/color]'] = 'Couleur : [color=couleur]texte[/color]';
 $lang['Red'] = 'Rouge';

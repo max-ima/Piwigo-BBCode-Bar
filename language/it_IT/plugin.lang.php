@@ -18,11 +18,11 @@ $lang['URL : [url=URL]Title[/url]'] = 'URL : [url=Page URL]Nome della pagina[/ur
 $lang['E-mail : [email]Email[/email]'] = 'E-mail : [email]Email[/email]';
 
 $lang['Font size : [size=X]text[/size]'] = 'Dimensione testo : [size=X]testo[/size]';
-$lang['tiny'] = 'Piccolissimo';
-$lang['small'] = 'Piccolo';
-$lang['normal'] = 'Normale';
-$lang['large'] = 'Grande';
-$lang['huge'] = 'Grandissimo';
+$lang['tiny font'] = 'Piccolissimo';
+$lang['small font'] = 'Piccolo';
+$lang['normal font'] = 'Normale';
+$lang['large font'] = 'Grande';
+$lang['huge font'] = 'Grandissimo';
 
 $lang['Font color : [color=color]text[/color]'] = 'Colore del testo  : [color=couleur]testo[/color]';
 $lang['Red'] = 'Rosso';

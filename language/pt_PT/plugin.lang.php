@@ -45,10 +45,10 @@ $lang['Underline : [u]underline[/u]'] = 'Sublinhado:  [u]underline[/u]';
 $lang['Unordered list : [ul][li]element[/li][/ul]'] = 'Lista de não pedidos: [ul][li]element[/li][/ul]';
 $lang['White'] = 'Branco';
 $lang['Yellow'] = 'Amarelo';
-$lang['huge'] = 'Enorme';
-$lang['large'] = 'Grande';
-$lang['normal'] = 'Normal';
-$lang['small'] = 'Pequeno';
-$lang['tiny'] = 'Fino';
+$lang['huge font'] = 'Enorme';
+$lang['large font'] = 'Grande';
+$lang['normal font'] = 'Normal';
+$lang['small font'] = 'Pequeno';
+$lang['tiny font'] = 'Fino';
 $lang['Available options'] = 'Opções disponíveis';
 ?>

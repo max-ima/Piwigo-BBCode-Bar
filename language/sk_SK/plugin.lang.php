@@ -17,11 +17,11 @@ $lang['URL : [url=URL]Title[/url]'] = 'URL : [url=Page URL]Názov[/url]';
 $lang['E-mail : [email]Email[/email]'] = 'E-mail : [email]Email[/email]';
 
 $lang['Font size : [size=X]text[/size]'] = 'Veľkosť písma : [size=X]text[/size]';
-$lang['tiny'] = 'Najmenšie';
-$lang['small'] = 'Malé';
-$lang['normal'] = 'Normálne';
-$lang['large'] = 'Väčšie';
-$lang['huge'] = 'Najväčšie';    
+$lang['tiny font'] = 'Najmenšie';
+$lang['small font'] = 'Malé';
+$lang['normal font'] = 'Normálne';
+$lang['large font'] = 'Väčšie';
+$lang['huge font'] = 'Najväčšie';    
 
 $lang['Font color : [color=color]text[/color]'] = 'Farba písma : [color=couleur]text[/color]';   
 $lang['Red']         = 'Červená';           
