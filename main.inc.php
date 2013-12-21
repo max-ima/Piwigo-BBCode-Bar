@@ -7,68 +7,45 @@ Plugin URI: auto
 Author: Atadilo & P@t & Mistic
 */
 
-if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
+defined('PHPWG_ROOT_PATH') or die('Hacking attempt!');
 
-define('BBcode_DIR' , basename(dirname(__FILE__)));
-define('BBcode_PATH' , PHPWG_PLUGINS_PATH . BBcode_DIR . '/');
-define('BBcode_codes', serialize(array('b','i','u','s','p','center','right','quote','ul','ol','img','url','email','size','color')));
+define('BBCODE_ID' ,    basename(dirname(__FILE__)));
+define('BBCODE_PATH' ,    PHPWG_PLUGINS_PATH . BBCODE_ID . '/');
+define('BBCODE_ADMIN',    get_root_url() . 'admin.php?page=plugin-' . BBCODE_ID);
+define('BBCODE_VERSION',  'auto');
 
-include_once(BBcode_PATH.'bbcode_bar.inc.php');
+
+include_once(BBCODE_PATH.'include/functions.inc.php');
+include_once(BBCODE_PATH.'include/events.inc.php');
+
+
 add_event_handler('init', 'init_bbcode_bar');
+
+if (defined('IN_ADMIN'))
+{
+  add_event_handler('get_admin_plugin_menu_links', 'bbcode_bar_admin_menu');
+}
+else
+{
+  add_event_handler('loc_after_page_header', 'add_bbcode_bar', EVENT_HANDLER_PRIORITY_NEUTRAL+1);
+}
+
+add_event_handler('render_comment_content', 'BBCodeParse');
+add_event_handler('render_contact_content', 'BBCodeParse');
+
 
 function init_bbcode_bar()
 {
+  global $conf;
+  
+  include_once(BBCODE_PATH . 'maintain.inc.php');
+  $maintain = new bbcode_bar_maintain(BBCODE_ID);
+  $maintain->autoUpdate(BBCODE_VERSION, 'install');
+  
+  $conf['bbcode_bar'] = unserialize($conf['bbcode_bar']);
+  $conf['bbcode_bar_codes'] = array('b','i','u','s','p','center','right','quote','ul','ol','img','url','email','size','color');
+  
+  load_language('plugin.lang', BBCODE_PATH);
+  
   remove_event_handler('render_comment_content', 'render_comment_content');
-  add_event_handler('render_comment_content', 'BBCodeParse');
-  add_event_handler('render_contact_content', 'BBCodeParse');
-  add_event_handler('loc_after_page_header', 'add_bbcode_bar');
 }
-
-function add_bbcode_bar() 
-{
-  global $page, $pwg_loaded_plugins;
-  
-  if (isset($page['body_id']) AND $page['body_id'] == 'thePicturePage') 
-  {
-    $prefilter = 'picture';
-    $textarea_id = 'contentid';
-  }
-  else if (
-    script_basename() == 'index' and isset($pwg_loaded_plugins['Comments_on_Albums'])
-    and isset($page['section']) and $page['section'] == 'categories' and isset($page['category'])
-    ) 
-  {
-    $prefilter = 'comments_on_albums';
-    $textarea_id = 'contentid';
-  }
-  else if (isset($page['section']) and $page['section'] == 'guestbook') 
-  {
-    $prefilter = 'index';
-    $textarea_id = 'contentid';
-  }
-  else if (isset($page['section']) and $page['section'] == 'contact') 
-  {
-    $prefilter = 'index';
-    $textarea_id = 'cf_content';
-  }
-  
-  if (isset($prefilter))
-  {
-    set_bbcode_bar($prefilter, $textarea_id);
-  }
-}
-
-if (script_basename() == 'admin')
-{
-  add_event_handler('get_admin_plugin_menu_links', 'bbcode_bar_admin_menu');
-  function bbcode_bar_admin_menu($menu)
-  {
-    array_push($menu, array(
-      'NAME' => 'BBCode Bar',
-      'URL' => get_root_url().'admin.php?page=plugin-' . BBcode_DIR
-    ));
-    return $menu;
-  } 
-}
-
-?>
