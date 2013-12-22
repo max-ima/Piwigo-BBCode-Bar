@@ -27,7 +27,7 @@ class bbcode_bar_maintain extends PluginMaintain
   {
     global $conf;
     
-    if (isset($conf['bbcode_bar']))
+    if (!isset($conf['bbcode_bar']))
     {
       $conf['bbcode_bar'] = serialize($this->default_conf);
 
