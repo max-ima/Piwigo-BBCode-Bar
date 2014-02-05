@@ -33,7 +33,7 @@ BBCodeBar = {strip}{ldelim}
     {if $BBCODE.separators[3]}{counter}{ldelim}separator:'|'},{/if}
     
     {if $BBCODE.codes.size}{counter}
-    {ldelim}name:'{'Font size : [size=X]text[/size]'|translate}', className:'miuIcon miuSize',
+    {ldelim}name:'{'Font size : [size=X]text[/size]'|translate}', className:'miuIcon miuSize', openWith:'[size=[![Size]!]]', closeWith:'[/size]',
       dropMenu :[
         {ldelim}name:'{'tiny font'|translate}', openWith:'[size=7]', closeWith:'[/size]', className:'miuSizeTiny' },
         {ldelim}name:'{'small font'|translate}', openWith:'[size=9]', closeWith:'[/size]', className:'miuSizeSmall' },
