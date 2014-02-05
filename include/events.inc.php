@@ -46,7 +46,7 @@ function add_bbcode_bar()
     return;
   }
   
-  $conf['bbcode_bar']['smilies'] = isset($pwg_loaded_plugins['SmiliesSupport']);
+  $conf['bbcode_bar']['smilies'] = isset($pwg_loaded_plugins['SmiliesSupport']) && !mobile_theme();
   
   // calculate separators between groups
   $groups = array(
