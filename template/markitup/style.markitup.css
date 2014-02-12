@@ -93,6 +93,16 @@
   background:url('images/icons.png') 20px 20px no-repeat;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+  .miuIcon>a {
+    background-image:url('images/icons@2x.png');
+    background-size:80px 80px;
+  }
+}
+
 .miuBold>a {
   background-position:0px 0px;
 }
