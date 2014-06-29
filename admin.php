@@ -11,7 +11,7 @@ if (isset($_POST['submit']))
     $conf['bbcode_bar'][$key] = isset($_POST[$key]);
   }
   
-  conf_update_param('bbcode_bar', serialize($conf['bbcode_bar']));
+  conf_update_param('bbcode_bar', $conf['bbcode_bar']);
   $page['infos'][] = l10n('Information data registered in database');
 }
 

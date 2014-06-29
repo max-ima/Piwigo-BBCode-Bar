@@ -9,11 +9,9 @@ Author: Atadilo & P@t & Mistic
 
 defined('PHPWG_ROOT_PATH') or die('Hacking attempt!');
 
-define('BBCODE_ID' ,    basename(dirname(__FILE__)));
-define('BBCODE_PATH' ,    PHPWG_PLUGINS_PATH . BBCODE_ID . '/');
-define('BBCODE_ADMIN',    get_root_url() . 'admin.php?page=plugin-' . BBCODE_ID);
-define('BBCODE_VERSION',  'auto');
-
+define('BBCODE_ID' ,   basename(dirname(__FILE__)));
+define('BBCODE_PATH' , PHPWG_PLUGINS_PATH . BBCODE_ID . '/');
+define('BBCODE_ADMIN', get_root_url() . 'admin.php?page=plugin-' . BBCODE_ID);
 
 include_once(BBCODE_PATH.'include/functions.inc.php');
 include_once(BBCODE_PATH.'include/events.inc.php');
@@ -38,11 +36,7 @@ function init_bbcode_bar()
 {
   global $conf;
   
-  include_once(BBCODE_PATH . 'maintain.inc.php');
-  $maintain = new bbcode_bar_maintain(BBCODE_ID);
-  $maintain->autoUpdate(BBCODE_VERSION, 'install');
-  
-  $conf['bbcode_bar'] = unserialize($conf['bbcode_bar']);
+  $conf['bbcode_bar'] = safe_unserialize($conf['bbcode_bar']);
   $conf['bbcode_bar_codes'] = array('b','i','u','s','p','center','right','quote','ul','ol','img','url','email','size','color');
   
   load_language('plugin.lang', BBCODE_PATH);
