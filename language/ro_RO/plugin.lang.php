@@ -48,4 +48,8 @@ $lang['E-mail : [email]Email']['/email'] = 'E-mail : [email]Email[/email]';
 $lang['Blue'] = 'Albastru';
 $lang['Black'] = 'Negru';
 $lang['Available options'] = 'Optuni disponibile';
-?>
+$lang['Striped  : [s]striped']['/s'] = 'Banda : [s]striped[/s]';
+$lang['Unordered list : [ul][li]element[/li]']['/ul'] = 'Lista neordonata : [ul][li]element[/li][/ul] ';
+$lang['Underline : [u]underline']['/u'] = 'Subliniat : [u]underline[/u]';
+$lang['Ordered list : [ol][li]element[/li]']['/ol'] = 'Lista ordonata : [ol][li]element[/li][/ol]';
+$lang['List element : [li]element']['/li'] = 'Afiseaza element : [li]element[/li] ';
