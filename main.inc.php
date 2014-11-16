@@ -9,9 +9,19 @@ Author: Atadilo & P@t & Mistic
 
 defined('PHPWG_ROOT_PATH') or die('Hacking attempt!');
 
-define('BBCODE_ID' ,   basename(dirname(__FILE__)));
-define('BBCODE_PATH' , PHPWG_PLUGINS_PATH . BBCODE_ID . '/');
-define('BBCODE_ADMIN', get_root_url() . 'admin.php?page=plugin-' . BBCODE_ID);
+if (basename(dirname(__FILE__)) != 'bbcode_bar')
+{
+  add_event_handler('init', 'bbcode_bar_error');
+  function bbcode_bar_error()
+  {
+    global $page;
+    $page['errors'][] = 'BBCode Barr folder name is incorrect, uninstall the plugin and rename it to "bbcode_bar"';
+  }
+  return;
+}
+
+define('BBCODE_PATH' , PHPWG_PLUGINS_PATH . 'bbcode_bar/');
+define('BBCODE_ADMIN', get_root_url() . 'admin.php?page=plugin-bbcode_bar');
 
 include_once(BBCODE_PATH.'include/functions.inc.php');
 include_once(BBCODE_PATH.'include/events.inc.php');

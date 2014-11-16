@@ -1,5 +1,5 @@
 <?php
-defined('BBCODE_ID') or die('Hacking attempt!');
+defined('BBCODE_PATH') or die('Hacking attempt!');
 
 global $conf, $template;
 
