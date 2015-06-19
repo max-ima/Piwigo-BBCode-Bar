@@ -1,0 +1,1 @@
+Permite folosirea codului BBCode pentru comentarii si descrieri.
