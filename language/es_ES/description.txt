@@ -1,1 +1,1 @@
-Permita al empleo BBCode para comentarios y descripciones.
+Permita al empleo BBCode para comentarios.

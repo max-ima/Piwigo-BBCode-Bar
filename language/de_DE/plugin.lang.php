@@ -36,4 +36,5 @@ $lang['Black'] = 'Schwarz';
 
 $lang['List element : [li]element[/li]'] = 'Listeneintrag : [li]Element[/li]';
 $lang['Available options'] = 'Verfügbare Optionen';
-?>
+$lang['E-mail : [email]Email']['/email'] = 'E-Mail : [email]E-mail[/email]';
+$lang['Paragraph : [p]Paragraph']['/p'] = 'Abschnitt : [p]Paragraph[/p]';

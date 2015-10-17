@@ -1,1 +1,1 @@
-Möjliggör användandet av BBCode i kommentarer och beskrivningar.
+Möjliggör användandet av BBCode i kommentarer.

@@ -1,1 +1,1 @@
-Atļaut lietot BBCode komentāriem un aprakstiem.
+Atļaut lietot BBCode komentāriem.
