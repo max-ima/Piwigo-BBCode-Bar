@@ -1,1 +1,1 @@
-Permite folosirea codului BBCode pentru comentarii si descrieri.
+Permite folosirea codului BBCode pentru comentarii.

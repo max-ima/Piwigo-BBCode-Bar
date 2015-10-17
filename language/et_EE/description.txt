@@ -1,1 +1,1 @@
-BBCode'i koodi kasutamine kommentaarides ja kirjeldustes.
+BBCode'i koodi kasutamine kommentaarides.

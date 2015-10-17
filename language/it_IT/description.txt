@@ -1,1 +1,1 @@
-Permette di utilizzare del BBCode per i commenti e le descrizioni.
+Permette di utilizzare del BBCode per i commenti.

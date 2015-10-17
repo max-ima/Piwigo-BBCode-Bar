@@ -2,7 +2,7 @@
 /*
 Plugin Name: BBCode Bar
 Version: auto
-Description: Allow use BBCode for comments and descriptions.
+Description: Allow use BBCode for comments
 Plugin URI: auto
 Author: Atadilo & P@t & Mistic
 */

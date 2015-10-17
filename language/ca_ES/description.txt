@@ -1,1 +1,1 @@
-Permet utilitzar BBCode per a comentaris i descripcions.
+Permet utilitzar BBCode per a comentaris.
