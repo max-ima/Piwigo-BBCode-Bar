@@ -26,14 +26,13 @@ $lang['huge font'] = 'Zeer groot';
 
 $lang['Font color : [color=color]text[/color]'] = 'Tekst kleur : [color=color]text[/color]';
 $lang['Red'] = 'Rood';
-$lang['Orange'] = 'Orange';
+$lang['Orange'] = 'Oranje';
 $lang['Yellow'] = 'Geel';
 $lang['Green'] = 'Groen';
 $lang['Blue'] = 'Blauw';
-$lang['Purple'] = 'Purper';
+$lang['Purple'] = 'Paars';
 $lang['White'] = 'Wit';
 $lang['Grey'] = 'Grijs';
 $lang['Black'] = 'Zwart';
   
 $lang['Available options'] = 'Beschikbare opties';
-?>
