@@ -1,15 +1,6 @@
 <?php
 defined('BBCODE_PATH') or die('Hacking attempt!');
 
-function bbcode_bar_admin_menu($menu)
-{
-  $menu[] = array(
-    'NAME' => 'BBCode Bar',
-    'URL' => BBCODE_ADMIN,
-    );
-  return $menu;
-}
-
 function add_bbcode_bar() 
 {
   global $page, $pwg_loaded_plugins, $template, $conf;

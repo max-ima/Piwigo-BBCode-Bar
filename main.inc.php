@@ -5,6 +5,7 @@ Version: auto
 Description: Allow use BBCode for comments
 Plugin URI: auto
 Author: Atadilo & P@t & Mistic
+Has Settings: webmaster
 */
 
 defined('PHPWG_ROOT_PATH') or die('Hacking attempt!');
@@ -29,11 +30,7 @@ include_once(BBCODE_PATH.'include/events.inc.php');
 
 add_event_handler('init', 'init_bbcode_bar');
 
-if (defined('IN_ADMIN'))
-{
-  add_event_handler('get_admin_plugin_menu_links', 'bbcode_bar_admin_menu');
-}
-else
+if (!defined('IN_ADMIN'))
 {
   add_event_handler('loc_after_page_header', 'add_bbcode_bar', EVENT_HANDLER_PRIORITY_NEUTRAL+1);
 }
