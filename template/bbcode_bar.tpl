@@ -1,5 +1,5 @@
 {combine_script id='markitup' require='jquery' load='footer' path=$BBCODE_PATH|cat:'template/markitup/jquery.markitup.js'}
-{combine_css id='markitup' order=20 path=$BBCODE_PATH|cat:'template/markitup/style.markitup.css'}
+{combine_css id='markitup' order=5 path=$BBCODE_PATH|cat:'template/markitup/style.markitup.css'}
 
 {footer_script require='markitup'}
 BBCodeBar = {strip}{ldelim}
